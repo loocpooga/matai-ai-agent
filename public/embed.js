@@ -144,10 +144,26 @@
         bubble.style.display = "none";
       }
     },
+
+    closeChat: function () {
+      var container = document.getElementById("matai-chat-container");
+      var bubble = document.getElementById("matai-chat-bubble");
+
+      container.classList.remove("open");
+      container.style.display = "none";
+      bubble.style.display = "flex";
+    },
   };
 
   // Expose globally
   window.MataiChat = MataiChat;
+
+  // Listen for messages from the iframe
+  window.addEventListener("message", function (event) {
+    if (event.data.type === "CLOSE_CHAT") {
+      MataiChat.closeChat();
+    }
+  });
 
   // Auto-init if data attributes present
   var script = document.currentScript;
