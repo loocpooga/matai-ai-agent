@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import ReactMarkdown from "react-markdown";
 
 type Message = {
@@ -13,6 +13,7 @@ export default function ChatWidget() {
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const inputRef = useRef<HTMLInputElement>(null);
 
   // Listen for messages from parent window (for iframe communication)
   useEffect(() => {
@@ -60,6 +61,8 @@ export default function ChatWidget() {
       setMessages((prev) => [...prev, errorMessage]);
     } finally {
       setIsLoading(false);
+      // Auto-focus input field after response
+      inputRef.current?.focus();
     }
   };
 
@@ -91,19 +94,28 @@ export default function ChatWidget() {
             </p>
             <div className="space-y-2">
               <button
-                onClick={() => setInput("What services do you offer?")}
+                onClick={() => {
+                  setInput("What services do you offer?");
+                  inputRef.current?.focus();
+                }}
                 className="block w-full text-left px-4 py-2 text-sm bg-gray-50 hover:bg-gray-100 rounded-lg text-gray-700 transition"
               >
                 💼 What services do you offer?
               </button>
               <button
-                onClick={() => setInput("How much does it cost?")}
+                onClick={() => {
+                  setInput("How much does it cost?");
+                  inputRef.current?.focus();
+                }}
                 className="block w-full text-left px-4 py-2 text-sm bg-gray-50 hover:bg-gray-100 rounded-lg text-gray-700 transition"
               >
                 💰 How much does it cost?
               </button>
               <button
-                onClick={() => setInput("How long does onboarding take?")}
+                onClick={() => {
+                  setInput("How long does onboarding take?");
+                  inputRef.current?.focus();
+                }}
                 className="block w-full text-left px-4 py-2 text-sm bg-gray-50 hover:bg-gray-100 rounded-lg text-gray-700 transition"
               >
                 ⏱️ How long does onboarding take?
@@ -159,6 +171,7 @@ export default function ChatWidget() {
       <div className="p-4 border-t bg-gray-50">
         <div className="flex gap-2">
           <input
+            ref={inputRef}
             type="text"
             value={input}
             onChange={(e) => setInput(e.target.value)}
