@@ -1,0 +1,415 @@
+Matai Tech - Detailed Services Guide
+
+==================================================
+SERVICE PHILOSOPHY
+==================================================
+
+We don't just build automations - we solve operational problems that cost you time and money.
+
+Every service we offer is designed to:
+- Deliver measurable ROI (time savings, cost reduction, or revenue growth)
+- Use reliable, maintainable technology (no-code/low-code tools)
+- Include proper error handling and monitoring
+- Be documented and transferable to your team
+
+==================================================
+CORE SERVICE 1: BUSINESS PROCESS AUTOMATION
+==================================================
+
+WHAT IT IS
+Automating repetitive, rule-based tasks that currently require manual work. We turn multi-step manual processes into automated workflows that run reliably 24/7.
+
+COMMON EXAMPLES
+- Lead capture from website forms → auto-create CRM records → send welcome emails → notify sales team
+- Order received → update inventory → create invoice → send confirmation → log in accounting system
+- New client signed → create project in PM tool → generate folders in Drive → send onboarding email → schedule kickoff
+- Support ticket created → categorize by keywords → route to right team → send acknowledgment → escalate if urgent
+- Employee submits expense → extract receipt data → verify against policy → route for approval → sync to accounting
+- Content published → post to social media → update website → notify subscribers → track engagement
+
+WHAT'S INCLUDED
+- Process mapping and workflow design
+- Automation implementation using n8n, Make, or Zapier
+- Error handling (what happens when something fails)
+- Testing with real data
+- Monitoring and alerts
+- Documentation for your team
+
+TECHNOLOGIES USED
+- n8n (open-source, self-hosted option for complex workflows)
+- Make.com (visual automation platform with extensive integrations)
+- Zapier (easiest for teams already using it)
+- Webhooks and APIs for custom integrations
+- OpenAI API for AI-enhanced workflows
+
+TYPICAL TIMELINE
+- Simple automation (2-3 steps): 3-5 days
+- Medium complexity (5-8 steps, multiple conditions): 1-2 weeks
+- Complex automation (10+ steps, error handling, multiple branches): 2-4 weeks
+
+TIME SAVINGS EXAMPLES
+- Manual invoice creation (30 min/invoice × 50/month) → automated → 25 hours/month saved
+- Lead data entry (10 min/lead × 100/month) → automated → 16 hours/month saved
+- Report generation (2 hours/week) → automated → 8 hours/month saved
+
+COST CONSIDERATIONS
+Included in package pricing. Additional platform costs:
+- n8n self-hosted: $0 (hosting costs only)
+- Make.com: $9-29/month for most businesses
+- Zapier: $20-50/month for typical usage
+
+WHAT'S NOT INCLUDED
+- Business process redesign or consulting (we automate existing processes)
+- Building custom software applications
+- Replacing entire business systems (we integrate existing ones)
+
+==================================================
+CORE SERVICE 2: CRM INTEGRATIONS AND DATA SYNC
+==================================================
+
+WHAT IT IS
+Connecting your CRM (Salesforce, HubSpot, Pipedrive, etc.) with other tools to keep data consistent, eliminate manual data entry, and prevent duplication.
+
+COMMON EXAMPLES
+- Bidirectional sync between CRM and accounting software (QuickBooks, Xero)
+- Website form submissions → auto-create CRM leads with proper categorization
+- E-commerce orders → create/update CRM customer records with purchase history
+- Email marketing platform (Mailchimp, ActiveCampaign) ↔ CRM contact sync
+- Calendar appointments → log as CRM activities with notes
+- Project management tool → update CRM deal stages and notes
+- Support tickets → create CRM cases and update contact history
+
+WHAT'S INCLUDED
+- Data mapping (which fields go where)
+- Deduplication logic (prevent creating duplicate records)
+- Two-way sync configuration (if needed)
+- Initial data migration and cleanup
+- Sync monitoring and error alerts
+- Documentation of field mappings
+
+TECHNOLOGIES USED
+- Direct API integrations where available
+- n8n, Make, or Zapier for middleware
+- Data transformation and validation logic
+- Deduplication algorithms
+- Webhook triggers for real-time sync
+
+TYPICAL TIMELINE
+- Simple one-way sync (form → CRM): 3-5 days
+- Bidirectional sync with deduplication: 1-2 weeks
+- Complex multi-system integration: 2-4 weeks
+
+TIME SAVINGS EXAMPLES
+- Manual CRM data entry from emails (15 min/day) → automated → 5 hours/month saved
+- Copy-paste between CRM and accounting (1 hour/week) → automated → 4 hours/month saved
+- Update contact records after support interactions (20 min/day) → automated → 7 hours/month saved
+
+COST CONSIDERATIONS
+Included in package pricing. May require:
+- CRM API access (often requires Professional tier or higher)
+- Third-party integration platform ($20-50/month)
+
+WHAT'S NOT INCLUDED
+- CRM setup or configuration (we assume you have an existing CRM)
+- Data cleanup beyond deduplication (available as separate service)
+- Training your team to use the CRM itself
+
+==================================================
+CORE SERVICE 3: DASHBOARDS AND REPORTING
+==================================================
+
+WHAT IT IS
+Automatically collecting data from multiple sources and presenting it in visual dashboards or scheduled reports. No more manual spreadsheet updates or chasing data from different systems.
+
+COMMON EXAMPLES
+- Executive dashboard: revenue, pipeline, key metrics from CRM + accounting + analytics
+- Operations dashboard: order volume, fulfillment time, inventory levels, support tickets
+- Marketing dashboard: campaign performance, lead sources, conversion rates, ROI
+- Sales dashboard: individual rep performance, deal stages, forecast accuracy
+- Customer success dashboard: health scores, churn risk, renewal pipeline, support volume
+- Financial dashboard: cash flow, AR/AP aging, expense tracking, profitability by client
+
+WHAT'S INCLUDED
+- Data source identification and connection
+- Automated data collection and aggregation
+- Dashboard design and visualization
+- Scheduled reports (daily/weekly/monthly emails)
+- Real-time or near-real-time updates
+- Mobile-friendly access
+
+TECHNOLOGIES USED
+- Google Data Studio (free, good for basic dashboards)
+- Notion or Airtable (for operational dashboards)
+- Custom dashboards using Retool or similar
+- Automated report generation (PDF/Excel via automation)
+- Data warehousing (for large data volumes)
+
+TYPICAL TIMELINE
+- Simple dashboard (1-2 data sources, 5-8 metrics): 1 week
+- Medium dashboard (3-5 sources, 10-15 metrics): 2 weeks
+- Complex dashboard (6+ sources, custom calculations): 3-4 weeks
+
+TIME SAVINGS EXAMPLES
+- Weekly manual report creation (3 hours/week) → automated → 12 hours/month saved
+- Daily data gathering from multiple systems (30 min/day) → automated → 10 hours/month saved
+- Monthly board presentation prep (5 hours/month) → automated → 5 hours/month saved
+
+COST CONSIDERATIONS
+Included in package pricing. Platform costs:
+- Google Data Studio: $0
+- Notion/Airtable: $8-20/user/month
+- Retool or similar: $10-50/user/month
+
+WHAT'S NOT INCLUDED
+- Business intelligence strategy consulting
+- Advanced predictive analytics or data science
+- Training your team on data analysis (only on using the dashboard)
+
+==================================================
+CORE SERVICE 4: DATA CLEANUP AND MIGRATION
+==================================================
+
+WHAT IT IS
+Normalizing messy data, removing duplicates, validating formats, and migrating data between systems reliably. Essential when switching tools or dealing with years of inconsistent data entry.
+
+COMMON EXAMPLES
+- Cleaning up CRM before migration (dedupe contacts, standardize fields, validate emails)
+- Migrating from spreadsheets to proper database/CRM
+- Consolidating data from multiple systems into one
+- Normalizing product catalogs across platforms
+- Validating customer addresses and contact information
+- Enriching records with missing data from external sources
+- Historical data import with validation
+
+WHAT'S INCLUDED
+- Data audit and quality assessment
+- Deduplication strategy and execution
+- Field mapping and transformation rules
+- Data validation (email format, phone numbers, required fields)
+- Test migration with subset of data
+- Full migration with verification
+- Backup and rollback plan
+
+TECHNOLOGIES USED
+- Custom scripts (Python/Node.js) for complex transformations
+- n8n/Make for automated cleanup workflows
+- Data validation tools and APIs
+- Deduplication algorithms (fuzzy matching)
+- Spreadsheet tools for preliminary analysis
+
+TYPICAL TIMELINE
+- Small dataset cleanup (<5,000 records): 3-5 days
+- Medium migration (5,000-50,000 records): 1-2 weeks
+- Large migration with complex rules: 3-4 weeks
+
+VALUE DELIVERED
+Not just time savings - data quality improvement:
+- Reduced duplicate records (typically 10-30% of CRM data)
+- Improved email deliverability (removing invalid addresses)
+- Better reporting accuracy (standardized fields)
+- Prevented issues in new system (clean data from day 1)
+
+COST CONSIDERATIONS
+Often priced as one-time project: $1,500-5,000 depending on complexity
+Can be included in Transformation Package for large migrations
+
+WHAT'S NOT INCLUDED
+- Ongoing data quality monitoring (available as add-on)
+- Training on proper data entry practices
+- Building new data schemas (we migrate existing structure)
+
+==================================================
+CORE SERVICE 5: PRACTICAL AI FEATURES
+==================================================
+
+WHAT IT IS
+Adding AI capabilities to your workflows using your company's data. Not AI hype - practical, cost-effective AI that solves real problems.
+
+COMMON EXAMPLES
+- Support ticket auto-categorization and suggested responses
+- Email auto-summarization and action item extraction
+- Meeting notes → auto-generate summary and follow-up tasks
+- Internal knowledge base Q&A (RAG chatbot trained on your documents)
+- Lead qualification scoring using AI analysis
+- Content generation assistance (product descriptions, email drafts)
+- Document data extraction (invoices, receipts, contracts)
+- Sentiment analysis on customer feedback
+
+WHAT'S INCLUDED
+- Use case identification and scoping
+- AI model selection (GPT-4, Claude, or specialized models)
+- Prompt engineering and optimization
+- Integration with existing workflows
+- Cost optimization (using right model for the task)
+- Accuracy monitoring and improvement
+- Documentation and usage guidelines
+
+TECHNOLOGIES USED
+- OpenAI API (GPT-4, GPT-3.5-turbo)
+- Anthropic Claude API
+- LangChain for complex workflows
+- Vector databases for RAG (retrieval-augmented generation)
+- n8n/Make for AI workflow orchestration
+
+TYPICAL TIMELINE
+- Simple AI feature (email summarization): 1 week
+- Medium complexity (chatbot with RAG): 2-3 weeks
+- Complex AI workflow (multi-step with validation): 3-4 weeks
+
+COST CONSIDERATIONS
+AI API costs are passed through or included in Growth/Transformation packages:
+- GPT-3.5-turbo: ~$0.002 per 1,000 tokens (very cheap)
+- GPT-4: ~$0.03 per 1,000 tokens (more expensive, better quality)
+- Typical usage: $20-200/month depending on volume
+
+Example: Support ticket categorization
+- 500 tickets/month × 500 tokens avg × $0.002/1K tokens = $0.50/month
+
+WHAT'S NOT INCLUDED
+- Training custom AI models (we use existing APIs)
+- AI strategy consulting beyond implementation
+- Ongoing prompt optimization (included in monthly support)
+
+VALUE DELIVERED
+- Time savings (10-30 min/task → 30 seconds)
+- Quality improvement (consistent categorization, no human error)
+- 24/7 availability (AI doesn't sleep)
+- Scalability (handle 10x volume without hiring)
+
+==================================================
+ADD-ON SERVICES
+==================================================
+
+ONGOING OPTIMIZATION AND SUPPORT
+Included in all monthly packages:
+- Proactive monitoring of all automations
+- Fix any issues or errors that arise
+- Monthly optimization and improvements
+- Support for questions or changes
+- Performance reporting
+
+TRAINING AND DOCUMENTATION
+Included in all packages:
+- Video walkthrough of each automation
+- Written documentation with screenshots
+- Q&A session after implementation
+- Update documentation as things change
+
+QUARTERLY STRATEGY REVIEWS
+Included in Growth and Transformation packages:
+- Review automation performance and ROI
+- Identify new automation opportunities
+- Optimize existing workflows
+- Plan next quarter priorities
+
+EMERGENCY SUPPORT
+Available as add-on ($200/month):
+- Same-day response to urgent issues
+- After-hours support availability
+- Priority phone/video support
+- Dedicated Slack/Teams channel
+
+==================================================
+SERVICE SELECTION GUIDE
+==================================================
+
+IF YOU'RE SPENDING TIME ON...
+- Manual data entry → Business Process Automation
+- Copying data between systems → CRM Integrations
+- Creating reports manually → Dashboards and Reporting
+- Inconsistent or messy data → Data Cleanup
+- Repetitive writing or analysis → Practical AI Features
+
+IF YOUR BIGGEST PAIN IS...
+- Too many manual tasks → Start with Efficiency Package
+- Systems not talking to each other → Start with Growth Package
+- Scaling is impossible with current processes → Transformation Package
+
+IF YOU'RE NOT SURE WHERE TO START...
+→ Book a Discovery Sprint ($1,500)
+We'll identify your highest-ROI opportunity and build a proof-of-concept in 1 week
+
+==================================================
+WHAT WE DON'T DO
+==================================================
+
+To set clear expectations:
+
+WE ARE NOT:
+- A custom software development agency (we don't build apps from scratch)
+- A business process consulting firm (we don't redesign your operations)
+- An IT department or help desk (we don't handle general tech support)
+- A managed service provider (we don't manage your infrastructure)
+
+WE DON'T:
+- Build mobile apps or web applications
+- Provide 24/7 emergency support (unless you add it)
+- Replace your entire tech stack
+- Train your team on third-party software
+- Offer ongoing business strategy consulting
+
+If you need these services, we're happy to refer you to trusted partners.
+
+==================================================
+IMPLEMENTATION APPROACH
+==================================================
+
+HOW WE DELIVER SERVICES
+
+1. DISCOVERY (Week 1)
+- Understand your current process
+- Map the workflow step-by-step
+- Identify integration requirements
+- Estimate ROI and timeline
+
+2. BUILD (Week 1-3)
+- Design the automation
+- Implement and configure
+- Add error handling and monitoring
+- Test with real data
+
+3. TRAIN (Week 3-4)
+- Documentation and video walkthrough
+- Live training session
+- Q&A and adjustments
+- Handoff to your team
+
+4. OPTIMIZE (Ongoing)
+- Monitor performance
+- Fix any issues
+- Monthly optimization
+- Quarterly strategy reviews
+
+You see working automations in week 1, not at the end of the project. We deliver value incrementally.
+
+==================================================
+GUARANTEES AND COMMITMENTS
+==================================================
+
+30-DAY ROI GUARANTEE
+If the automation doesn't deliver the promised time/cost savings within 30 days, we'll refund your setup fee and continue working at no charge until it does.
+
+QUALITY GUARANTEE
+All implementations include 30 days of free adjustments and optimization after launch.
+
+UPTIME GUARANTEE
+99%+ uptime on all automations or your monthly fee is prorated for downtime.
+
+RESPONSE TIME COMMITMENT
+- Critical issues: 4 hours
+- Important requests: 24 hours
+- General questions: 48 hours
+
+==================================================
+NEXT STEPS
+==================================================
+
+Ready to eliminate repetitive work?
+
+1. Schedule free 30-minute discovery call
+2. We'll identify 2-3 high-ROI opportunities
+3. Receive detailed proposal with ROI projections
+4. Start seeing results in 1-2 weeks
+
+Contact: hello@mataitech.com
+Website: mataitech.com

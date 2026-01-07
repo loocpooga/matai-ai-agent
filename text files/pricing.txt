@@ -1,0 +1,39 @@
+Matai Tech — Pricing (Testing Draft)
+
+NOTE: This pricing is placeholder pricing used to test the RAG system. Final pricing may change.
+
+Pricing Philosophy
+- Pricing is based on complexity, scope, and ongoing support.
+- Most projects include discovery, build, testing, deployment, and documentation.
+- Monthly plans cover hosting, monitoring, fixes, and small improvements.
+
+Packages
+
+Starter
+- Best for: One simple automation or workflow
+- Setup fee: $750
+- Monthly: $150 per month
+- Includes:
+  - One automation or workflow
+  - Basic error handling and logging
+  - One hour of support per month
+
+Growth
+- Best for: Multiple automations and basic reporting
+- Setup fee: $2,500
+- Monthly: $500 per month
+- Includes:
+  - Up to four automations or workflows
+  - One basic dashboard or reporting pipeline
+  - Monitoring and alerting
+  - Three hours of support per month
+
+Scale
+- Best for: Ongoing automation and reporting needs
+- Setup fee: $5,000 or more
+- Monthly: $1,250 or more per month
+- Includes:
+  - Six or more automations or workflows
+  - Multi-source reporting pipelines
+  - Higher reliability monitoring
+  - Six hours of support per month

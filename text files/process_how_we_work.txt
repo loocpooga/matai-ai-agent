@@ -1,0 +1,21 @@
+Matai Tech — How We Work
+
+Step 1: Discovery
+- Review tools and workflows
+- Define goals and success metrics
+
+Step 2: Access and Requirements
+- Confirm systems of record
+- Collect credentials and APIs
+
+Step 3: Build
+- Implement automations and dashboards
+- Add logging and safeguards
+
+Step 4: Testing
+- Validate normal and edge cases
+- Fix issues
+
+Step 5: Launch and Support
+- Deploy to production
+- Monitor and maintain systems

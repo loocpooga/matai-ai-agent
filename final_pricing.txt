@@ -1,0 +1,264 @@
+Matai Tech - Business Automation & AI Solutions
+Value-Based Pricing Guide
+
+==================================================
+WHO WE SERVE
+==================================================
+
+Matai Tech partners with operations-heavy small businesses and growing companies (typically 10-50 employees) who are ready to eliminate manual work and scale their operations through intelligent automation.
+
+We specialize in helping companies that:
+- Spend significant time on repetitive manual tasks
+- Are outgrowing spreadsheets and manual processes
+- Want to scale but are held back by operational bottlenecks
+- Need custom automation that off-the-shelf tools can't provide
+
+==================================================
+OUR PRICING PHILOSOPHY
+==================================================
+
+We don't charge for hours or features - we charge based on the value we deliver.
+
+Why? Because what matters to you is the outcome:
+- How much time will you save?
+- How much cost will you eliminate?
+- How much revenue can you unlock?
+
+Our pricing is designed so you always get 3-10x ROI on your investment. If an automation isn't delivering measurable value, we haven't done our job.
+
+==================================================
+INVESTMENT PACKAGES
+==================================================
+
+EFFICIENCY PACKAGE
+--------------------------------------------------
+Best for: Companies wasting 10-20 hours/week on manual tasks
+
+Investment: $3,500 setup + $350/month
+
+Typical ROI: $2,000-5,000/month in time savings
+Payback period: 1-2 months
+
+What's included:
+• Discovery & process mapping session
+• 1-2 high-impact automations targeting your biggest time drains
+• Basic monitoring & error alerts
+• 2 hours of monthly optimization and support
+• Documentation & training for your team
+
+Ideal for:
+- Small teams spending 2+ hours daily on repetitive work
+- Manual data entry and reporting tasks
+- Simple workflow automations
+- Email and notification automation
+
+
+GROWTH PACKAGE
+--------------------------------------------------
+Best for: Companies ready to scale but held back by manual processes
+
+Investment: $8,500 setup + $850/month
+
+Typical ROI: $5,000-15,000/month (time + cost savings + revenue)
+Payback period: 1-2 months
+
+What's included:
+• Comprehensive operations audit
+• 3-5 integrated automations across your business
+• Custom dashboard for real-time operational visibility
+• Proactive monitoring with instant alerts
+• 5 hours of monthly optimization, support & new automation requests
+• Quarterly strategy reviews
+• Priority support response time
+
+Ideal for:
+- Multi-step processes spanning multiple tools
+- Integration between CRM, accounting, project management systems
+- Automated reporting and analytics
+- Customer onboarding and fulfillment workflows
+- Inventory and order management
+
+
+TRANSFORMATION PACKAGE
+--------------------------------------------------
+Best for: Companies serious about operational excellence
+
+Investment: Custom quote (typically $15,000-30,000 setup + $1,500-3,000/month)
+
+Typical ROI: $15,000-50,000+/month
+Payback period: 2-4 months
+
+What's included:
+• End-to-end process transformation across departments
+• Unlimited automations within agreed scope
+• Executive dashboard with KPIs and real-time metrics
+• Priority support with dedicated implementation partner
+• Quarterly business reviews and optimization planning
+• Advanced AI integrations (document processing, predictive analytics)
+• Custom integrations with legacy systems
+
+Ideal for:
+- Companies with complex, multi-departmental workflows
+- Organizations ready to eliminate entire categories of manual work
+- Businesses preparing for rapid growth or acquisition
+- Companies needing competitive advantage through operational efficiency
+
+==================================================
+ALTERNATIVE ENGAGEMENT OPTIONS
+==================================================
+
+DISCOVERY SPRINT
+--------------------------------------------------
+Investment: $1,500
+
+Not sure where to start? Our 1-week Discovery Sprint identifies your highest-ROI automation opportunity and builds a working proof-of-concept.
+
+Perfect for companies who:
+- Want to see results before committing to a full package
+- Need help prioritizing which processes to automate first
+- Want to validate ROI before larger investment
+
+If you proceed to a full package, this $1,500 applies to your setup fee.
+
+
+PROJECT-BASED ENGAGEMENT
+--------------------------------------------------
+Investment: 20-30% of first-year ROI
+
+For companies who prefer project-based pricing:
+
+Example: Your team spends 15 hours/week on manual reporting
+- Annual labor cost: $25,000 (15 hrs/week × 52 weeks × $30/hr)
+- Automation saves 80% = $20,000/year savings
+- Project price: $4,000-6,000 (20-30% of year 1 savings)
+- Optional maintenance retainer: $500/month
+
+==================================================
+ROI CALCULATOR
+==================================================
+
+Use this simple formula to estimate your potential ROI:
+
+1. Hours spent per week on manual task: ____ hours
+2. Average hourly cost (salary + benefits): $____ /hour
+3. Monthly cost = (hours × 4 weeks × hourly cost): $____
+4. Automation typically saves 70-90% of this time
+5. Your potential monthly savings: $____
+
+Compare that to our monthly fee and you'll see the ROI.
+
+==================================================
+REAL-WORLD EXAMPLES
+==================================================
+
+CASE 1: E-commerce Business
+Challenge: 15 hours/week processing orders manually
+Solution: Efficiency Package - automated order processing
+Results:
+- 12 hours/week saved ($2,400/month value)
+- ROI: 6.8x monthly investment
+- Payback: 1.5 months
+
+CASE 2: Professional Services Firm
+Challenge: 3 staff members spending 40+ hours/month on client reporting
+Solution: Growth Package - automated data aggregation and report generation
+Results:
+- 35 hours/month saved ($4,200/month value)
+- Eliminated $600/month in reporting software costs
+- ROI: 5.6x monthly investment
+- Payback: 1.8 months
+
+CASE 3: Manufacturing Company
+Challenge: Manual inventory tracking causing stockouts and overordering
+Solution: Transformation Package - real-time inventory system with predictive ordering
+Results:
+- Eliminated $15,000/month in excess inventory
+- Reduced stockouts by 85% (unlocked $8,000/month in sales)
+- Saved 20 hours/week in manual tracking
+- ROI: 12x monthly investment
+- Payback: 2 months
+
+==================================================
+FREQUENTLY ASKED QUESTIONS
+==================================================
+
+Q: That seems expensive. How do I justify the cost?
+A: Think investment, not expense. If you're spending 20 hours/month on manual work at $50/hour, that's $1,000/month in labor cost. The Efficiency Package at $350/month pays for itself in month 1 and continues delivering value month after month. You're not paying for software - you're recovering thousands in hidden labor costs.
+
+Q: What if the automation doesn't work or breaks?
+A: 30-Day ROI Guarantee - If the automation doesn't save you the promised time within 30 days, we'll refund your setup fee and continue working at no charge until it does. Your monthly fee includes proactive monitoring and immediate fixes if anything breaks.
+
+Q: Can we start with something smaller to test the waters?
+A: Absolutely! Our Discovery Sprint ($1,500) is perfect for this. We identify your highest-ROI automation opportunity and build a proof-of-concept in one week. If you're happy with the results, the $1,500 applies to your full package setup fee.
+
+Q: How long does implementation take?
+A: Efficiency Package: 1-2 weeks
+   Growth Package: 2-4 weeks
+   Transformation Package: 4-8 weeks
+
+   We provide value incrementally - you'll see working automations within the first week, not at the end of the project.
+
+Q: Do we need technical knowledge to use the automations?
+A: No. We design everything to be user-friendly and provide full training. Most automations run in the background automatically. When you need to interact with them, it's as simple as clicking a button or sending an email.
+
+Q: What happens if we want to pause or cancel?
+A: Our monthly services are month-to-month. You can pause or cancel anytime with 30 days' notice. We'll provide documentation and handoff materials. The automations we build are yours to keep.
+
+Q: Do you work with our existing tools or require new software?
+A: We work with your existing tools - Salesforce, HubSpot, QuickBooks, Shopify, spreadsheets, etc. In some cases, we might recommend a free or low-cost tool that makes automation easier, but we never require expensive new software.
+
+Q: What if we don't know which processes to automate?
+A: That's exactly what our Discovery phase is for. We'll analyze your operations, interview your team, and identify the highest-ROI opportunities. Most companies have 3-5 processes that are obvious wins - we'll find them.
+
+==================================================
+WHAT'S NOT INCLUDED
+==================================================
+
+To set clear expectations, our packages do NOT include:
+- Custom software development (we focus on automation, not building apps)
+- 24/7 emergency support outside business hours
+- Training for your team beyond initial onboarding
+- Redesigning your business processes (we automate existing ones)
+
+For custom needs beyond our packages, we're happy to provide a custom quote.
+
+==================================================
+OUR GUARANTEE
+==================================================
+
+30-Day ROI Guarantee: If your automation doesn't deliver the promised time/cost savings within 30 days, we'll refund your setup fee and continue working at no additional charge until it does.
+
+Quality Guarantee: All automations include 30 days of free adjustments and optimization after launch.
+
+Uptime Guarantee: 99%+ uptime or your monthly fee is prorated for downtime.
+
+==================================================
+NEXT STEPS
+==================================================
+
+Ready to eliminate repetitive work and scale your operations?
+
+1. Schedule a free 30-minute discovery call
+   - We'll discuss your biggest operational bottlenecks
+   - Identify 2-3 high-ROI automation opportunities
+   - Provide a rough estimate of potential time/cost savings
+
+2. We'll send a detailed proposal
+   - Specific automations we recommend
+   - Expected ROI and payback timeline
+   - Package recommendation and pricing
+
+3. Start seeing results in 1-2 weeks
+   - Quick wins delivered incrementally
+   - Full training and documentation
+   - Ongoing optimization and support
+
+Contact us:
+Email: hello@mataitech.com
+Website: mataitech.com
+
+==================================================
+
+Note: All pricing and ROI estimates are based on typical client engagements. Your actual results may vary based on your specific processes and business context. We'll provide detailed ROI projections during our discovery call.
+
+Last updated: January 2026

@@ -1,0 +1,557 @@
+Matai Tech - Technology Stack and Tools
+
+==================================================
+OUR TECHNOLOGY PHILOSOPHY
+==================================================
+
+We believe in using proven, reliable technology that:
+- Works consistently and predictably
+- Is maintainable by clients (if they choose)
+- Costs reasonable amounts (no enterprise pricing traps)
+- Has strong community and support
+- Won't disappear or change dramatically overnight
+
+We prioritize BORING TECHNOLOGY that works over cutting-edge tools that break.
+
+==================================================
+AUTOMATION PLATFORMS WE USE
+==================================================
+
+N8N (Open-Source Workflow Automation)
+----------------------------------------------
+Best for: Complex workflows, high volume, data privacy requirements
+
+What it is:
+- Open-source workflow automation platform
+- Self-hostable (you control the infrastructure)
+- Visual workflow builder with code capabilities
+- 400+ pre-built integrations
+- Active community and development
+
+Why we use it:
+- No per-operation pricing (cost-effective at scale)
+- Complete control and transparency
+- Can self-host for data privacy
+- Flexible and powerful
+- No vendor lock-in
+
+When we recommend it:
+- Complex multi-step workflows
+- High volume operations (1000s of runs per day)
+- Data privacy or compliance requirements
+- Want to minimize ongoing costs
+- Technical team comfortable with infrastructure
+
+Typical costs:
+- Self-hosted: $20-50/month (hosting on DigitalOcean, AWS, etc.)
+- n8n Cloud: $20-50/month (managed hosting)
+- Significantly cheaper than alternatives at scale
+
+Technical details:
+- Built on Node.js
+- Workflows stored as JSON
+- Extensible with custom nodes
+- API for programmatic access
+- Webhook triggers and HTTP requests
+
+
+MAKE.COM (Visual Workflow Platform)
+----------------------------------------------
+Best for: Medium complexity, visual-first teams, extensive integrations
+
+What it is:
+- Visual automation platform (formerly Integromat)
+- 1000+ pre-built app integrations
+- Powerful data manipulation capabilities
+- Visual flow builder
+- Real-time execution monitoring
+
+Why we use it:
+- Great balance of power and usability
+- Excellent visual interface
+- Strong debugging and error handling
+- Good for teams that aren't highly technical
+- Extensive integration library
+
+When we recommend it:
+- 3-10 step workflows with moderate complexity
+- Teams that prefer visual tools
+- Need integrations with many SaaS apps
+- Want managed platform (no infrastructure management)
+- Reasonable volume (under 10K operations/month)
+
+Typical costs:
+- Free tier: 1,000 operations/month
+- Core: $9/month (10,000 operations)
+- Pro: $16/month (20,000 operations)
+- Teams: $29/month (40,000 operations)
+
+Most clients: $9-29/month
+
+Technical details:
+- Browser-based workflow builder
+- Scenarios (workflows) run on Make's infrastructure
+- Webhook triggers, scheduled runs
+- Data stores for temporary storage
+- Error handling and retry logic
+
+
+ZAPIER (Simple Automation Platform)
+----------------------------------------------
+Best for: Simple workflows, non-technical teams, getting started quickly
+
+What it is:
+- Original automation platform (founded 2011)
+- 5,000+ app integrations
+- Simple trigger → action format
+- Very user-friendly
+- Largest integration ecosystem
+
+Why we use it:
+- Easiest to understand and use
+- Excellent reliability and uptime
+- Great for teams already using it
+- Fast implementation for simple workflows
+- Strong support and documentation
+
+When we recommend it:
+- Simple 2-5 step workflows
+- Non-technical teams
+- Already using Zapier
+- Need integration with niche apps (likely available)
+- Want maximum simplicity
+
+Typical costs:
+- Free tier: 100 tasks/month
+- Starter: $20/month (750 tasks)
+- Professional: $49/month (2,000 tasks)
+- Team: $299/month (50,000 tasks)
+
+Most clients: $20-50/month
+
+Technical details:
+- Browser-based Zap builder
+- Trigger + Action model
+- Multi-step Zaps (premium)
+- Filters and formatters
+- Webhooks and code steps (premium)
+
+Limitations:
+- Less powerful for complex data transformations
+- Per-task pricing can get expensive at scale
+- Less flexibility than n8n or Make
+
+==================================================
+AI AND MACHINE LEARNING
+==================================================
+
+OPENAI GPT-4 AND GPT-3.5
+----------------------------------------------
+Use cases:
+- Text summarization (emails, tickets, meeting notes)
+- Content generation (product descriptions, email drafts)
+- Data extraction (pull structured data from unstructured text)
+- Categorization and tagging
+- Sentiment analysis
+
+Why we use it:
+- Best-in-class language understanding
+- Reliable and well-documented API
+- Cost-effective for most use cases
+- Easy to integrate
+
+Typical costs:
+- GPT-3.5-turbo: ~$0.002 per 1,000 tokens (very cheap)
+- GPT-4: ~$0.03 per 1,000 tokens (more expensive, better quality)
+
+Example: Categorizing 500 support tickets/month
+- 500 tickets × 500 tokens avg × $0.002/1K tokens = $0.50/month
+
+ANTHROPIC CLAUDE
+----------------------------------------------
+Use cases:
+- Long document analysis
+- Complex reasoning tasks
+- When we need alternative to OpenAI
+- Specific compliance or preference requirements
+
+Why we use it:
+- Excellent for long-context tasks
+- Strong reasoning capabilities
+- Alternative to OpenAI
+- Good API and documentation
+
+
+OPENAI EMBEDDINGS + VECTOR DATABASES
+----------------------------------------------
+Use cases:
+- Semantic search (find similar documents/content)
+- RAG (retrieval-augmented generation) for chatbots
+- Duplicate detection
+- Content recommendations
+
+Technology stack:
+- OpenAI text-embedding-3-small (embeddings)
+- Pinecone or Supabase pgvector (vector database)
+- LangChain (orchestration framework)
+
+Why we use it:
+- Enables intelligent search beyond keywords
+- Makes chatbots more accurate
+- Cost-effective
+
+Typical costs:
+- Embeddings: ~$0.0001 per 1,000 tokens (very cheap)
+- Vector DB: $70-100/month (Pinecone) or ~$25/month (Supabase)
+
+==================================================
+DATABASES AND DATA STORAGE
+==================================================
+
+AIRTABLE
+----------------------------------------------
+Use cases:
+- Operational databases (request tracking, inventory, etc.)
+- When clients need easy interface to view/edit data
+- Lightweight data warehousing
+- Approval workflows
+
+Why we use it:
+- User-friendly interface
+- API for automation
+- Good for non-technical teams
+- Built-in views and filtering
+
+Typical costs: $10-20/user/month
+
+GOOGLE SHEETS
+----------------------------------------------
+Use cases:
+- Simple data storage
+- When client already uses Google Workspace
+- Temporary data during migrations
+- Reporting and dashboards (via Google Data Studio)
+
+Why we use it:
+- Free (with Google account)
+- Familiar to everyone
+- Easy to share and collaborate
+- Good API for automation
+
+Limitations:
+- Not suitable for high-volume data
+- Performance degrades with large datasets
+- Not ideal for production data storage
+
+SUPABASE (PostgreSQL)
+----------------------------------------------
+Use cases:
+- Production-grade databases
+- When we need relational data
+- Vector search (pgvector extension)
+- Real-time data needs
+
+Why we use it:
+- Open-source (can self-host)
+- PostgreSQL (proven technology)
+- Generous free tier
+- Good for scaling
+
+Typical costs:
+- Free tier: Generous for small projects
+- Pro: $25/month (most clients)
+
+==================================================
+COMMUNICATION AND NOTIFICATIONS
+==================================================
+
+EMAIL
+----------------------------------------------
+Platforms: Gmail API, Outlook, SendGrid, Mailgun, Resend
+
+Use cases:
+- Sending automated emails
+- Parsing incoming emails
+- Trigger workflows from email
+
+Why we use it:
+- Universal (everyone has email)
+- Reliable delivery
+- Easy to integrate
+
+SLACK
+----------------------------------------------
+Use cases:
+- Internal notifications
+- Approval workflows
+- Status updates
+- Alerts and monitoring
+
+Why we use it:
+- Most modern teams use it
+- Excellent API
+- Real-time communication
+- Reduces email noise
+
+Typical costs: Free for notifications (no per-message cost)
+
+TWILIO (SMS)
+----------------------------------------------
+Use cases:
+- SMS notifications
+- Two-way SMS automation
+- Phone call triggers
+
+Why we use it:
+- Reliable SMS delivery
+- Good API
+- Reasonable pricing
+
+Typical costs: ~$0.01 per SMS
+
+==================================================
+INTEGRATION PLATFORMS AND APIS
+==================================================
+
+WEBHOOKS
+----------------------------------------------
+What they are: Real-time notifications when events occur
+
+Why we use them:
+- Instant updates (no polling)
+- Efficient
+- Reliable
+- Standard across most modern platforms
+
+REST APIs
+----------------------------------------------
+What they are: Standard web APIs for reading/writing data
+
+Why we use them:
+- Universal standard
+- Well-documented
+- Predictable
+
+GRAPHQL APIs
+----------------------------------------------
+What they are: Query language for APIs (used by some modern platforms)
+
+When we use them:
+- Platforms that only offer GraphQL (Shopify, GitHub, etc.)
+- When we need complex data queries
+
+==================================================
+MONITORING AND ERROR HANDLING
+==================================================
+
+SENTRY
+----------------------------------------------
+Use cases:
+- Error tracking and monitoring
+- Debugging production issues
+- Performance monitoring
+
+Why we use it:
+- Detailed error reporting
+- Good for debugging
+- Alerts on errors
+
+BETTERUPTIME (or similar)
+----------------------------------------------
+Use cases:
+- Uptime monitoring
+- Alert if automations stop running
+- Status pages
+
+Why we use it:
+- Proactive monitoring
+- Catches issues before clients notice
+- Public status pages
+
+CUSTOM MONITORING
+----------------------------------------------
+What we build:
+- Expected volume checks (alert if unusually low activity)
+- Success rate monitoring
+- Data validation checks
+- Custom dashboards
+
+Tools used:
+- n8n/Make workflows
+- Slack/Email alerts
+- Google Sheets or Airtable for tracking
+
+==================================================
+CRM AND SALES PLATFORMS
+==================================================
+
+We integrate with virtually all major CRMs:
+
+- HUBSPOT: Excellent API, our most common CRM integration
+- SALESFORCE: Enterprise-grade, complex but powerful
+- PIPEDRIVE: Simple, sales-focused
+- ZOHO: Budget-friendly option
+- CLOSE: Built for sales teams
+- COPPER: Great for Google Workspace users
+
+And many others...
+
+==================================================
+ACCOUNTING AND FINANCE
+==================================================
+
+- QUICKBOOKS: Most common small business accounting
+- XERO: Popular alternative, good API
+- NETSUITE: Enterprise ERP
+- FRESHBOOKS: Freelancers and small businesses
+- WAVE: Free option for very small businesses
+
+==================================================
+E-COMMERCE PLATFORMS
+==================================================
+
+- SHOPIFY: Most common, excellent API
+- WOOCOMMERCE: WordPress-based
+- BIGCOMMERCE: Enterprise e-commerce
+- SQUARE: Point of sale + e-commerce
+- MAGENTO: Complex, enterprise
+
+==================================================
+PROJECT MANAGEMENT
+==================================================
+
+- ASANA: Popular, good API
+- MONDAY: Visual, flexible
+- CLICKUP: All-in-one project management
+- NOTION: Knowledge base + project management
+- TRELLO: Simple kanban boards
+- JIRA: Software development focused
+
+==================================================
+HOW WE CHOOSE TECHNOLOGY
+==================================================
+
+Decision criteria:
+
+1. RELIABILITY FIRST
+   - Proven track record
+   - Good uptime history
+   - Strong error handling
+
+2. CLIENT MAINTAINABILITY
+   - Can client understand it?
+   - Can they manage it themselves if needed?
+   - Good documentation?
+
+3. COST EFFECTIVENESS
+   - Reasonable pricing
+   - No usage traps (sudden huge bills)
+   - Transparent pricing
+
+4. INTEGRATION CAPABILITIES
+   - Good APIs
+   - Pre-built connectors when possible
+   - Webhook support
+
+5. LONG-TERM VIABILITY
+   - Company financially stable
+   - Active development
+   - Strong community
+
+6. AVOID VENDOR LOCK-IN
+   - Can export data
+   - Can migrate to alternatives
+   - Open standards when possible
+
+==================================================
+WHAT WE DON'T USE (AND WHY)
+==================================================
+
+CUSTOM CODE FROM SCRATCH
+Why not: Expensive to build and maintain
+Alternative: Use no-code/low-code platforms with code snippets when needed
+
+OBSCURE OR NEW PLATFORMS
+Why not: Risk of platform disappearing or changing dramatically
+Alternative: Stick with established platforms with track records
+
+ENTERPRISE-ONLY PLATFORMS
+Why not: Overkill for small businesses, expensive, complex
+Alternative: Use SMB-focused tools that scale
+
+OVERLY COMPLEX SOLUTIONS
+Why not: Hard to maintain, difficult to explain to clients
+Alternative: Keep it simple, add complexity only when necessary
+
+==================================================
+YOUR EXISTING TOOLS
+==================================================
+
+We work with YOUR tools whenever possible:
+
+Current tech stack:
+- We'll integrate with what you already use
+- Only recommend new tools if significant benefit
+- Never force unnecessary tool changes
+
+Assessment process:
+1. Understand your current tools
+2. Evaluate integration capabilities
+3. Recommend additions only if needed
+4. Prioritize working with existing stack
+
+==================================================
+TECHNOLOGY RECOMMENDATIONS
+==================================================
+
+If you're starting fresh or looking to optimize:
+
+SMALL BUSINESS (< $1M revenue):
+- Automation: Zapier (simplicity)
+- CRM: HubSpot free or Pipedrive
+- Accounting: QuickBooks or Wave
+- Project Management: Asana or ClickUp
+- Communication: Gmail + Slack
+
+GROWING BUSINESS ($1-5M revenue):
+- Automation: Make.com (balance of power and ease)
+- CRM: HubSpot Professional or Salesforce
+- Accounting: QuickBooks or Xero
+- Project Management: Asana or Monday
+- Communication: Google Workspace + Slack
+
+ESTABLISHED BUSINESS ($5M+ revenue):
+- Automation: n8n (cost-effective at scale)
+- CRM: Salesforce or HubSpot Enterprise
+- Accounting: QuickBooks or NetSuite
+- Project Management: Asana, Monday, or ClickUp
+- Communication: Google Workspace or Microsoft 365 + Slack/Teams
+
+==================================================
+STAYING CURRENT
+==================================================
+
+Technology changes rapidly. We stay current by:
+
+- Regular evaluation of new platforms
+- Testing new integrations in our lab
+- Following platform updates and changes
+- Attending conferences and webinars
+- Active in automation communities
+- Regular training and certification
+
+But we don't chase every new shiny tool - we evaluate carefully and adopt when proven.
+
+==================================================
+QUESTIONS ABOUT OUR TECH STACK?
+==================================================
+
+Contact us:
+Email: hello@mataitech.com
+Website: mataitech.com
+
+We're happy to discuss:
+- Specific tool recommendations for your situation
+- Integration feasibility
+- Platform comparisons
+- Migration strategies

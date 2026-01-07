@@ -1,0 +1,160 @@
+Matai Tech - Company Overview
+
+==================================================
+WHO WE ARE
+==================================================
+
+Matai Tech is a business automation consultancy that helps operations-heavy companies eliminate repetitive work and scale efficiently through intelligent automation.
+
+We specialize in helping small and growing businesses (typically 10-50 employees) who are:
+- Drowning in manual processes
+- Outgrowing spreadsheets and disconnected tools
+- Ready to scale but held back by operational bottlenecks
+- Behind on technology adoption but ready to catch up
+
+==================================================
+OUR MISSION
+==================================================
+
+We believe every hour spent on repetitive manual work is an hour stolen from what actually grows your business - serving customers, building products, and strategic thinking.
+
+Our mission is to help operations-heavy companies recover that time by building reliable, custom automation that actually works.
+
+==================================================
+WHAT MAKES US DIFFERENT
+==================================================
+
+1. VALUE-FIRST APPROACH
+We don't sell you automations - we sell you time back. Our pricing is based on the ROI you get, not the hours we spend. If an automation doesn't deliver measurable value, we haven't done our job.
+
+2. NO UNNECESSARY COMPLEXITY
+We use no-code and low-code tools (n8n, Make, Zapier) that are reliable, maintainable, and cost-effective. No expensive custom software. No vendor lock-in. Just practical solutions that work.
+
+3. OPERATIONS-HEAVY EXPERTISE
+We understand operations because we've lived it. We know what it's like to have a small team drowning in manual work. We speak your language, not just tech jargon.
+
+4. INCREMENTAL VALUE DELIVERY
+You see working automations in week 1, not at the end of a 3-month project. We deliver value incrementally so you can validate ROI early and often.
+
+5. REALISTIC ABOUT AUTOMATION
+We won't automate everything or promise magic. Some processes should stay manual. We help you identify the 20% of work that delivers 80% of the value when automated.
+
+==================================================
+OUR BACKGROUND
+==================================================
+
+Matai Tech was founded to serve the overlooked middle market - companies that are too small for enterprise consultants but too complex for DIY automation tools.
+
+We've seen firsthand how operations-heavy businesses struggle:
+- Spending 15+ hours/week on manual data entry and reporting
+- Using 10+ disconnected tools with no integration
+- Losing revenue opportunities because leads fall through the cracks
+- Unable to scale because current processes don't scale
+
+We built Matai Tech to fix this - practical automation that delivers real ROI without enterprise complexity or price tags.
+
+==================================================
+OUR CORE VALUES
+==================================================
+
+OUTCOMES OVER ACTIVITY
+We measure success by the time you save and revenue you unlock, not the number of automations we build.
+
+TRANSPARENCY
+You'll always know what we're working on, why it matters, and what ROI to expect. No black boxes.
+
+RELIABILITY
+Automations that work 99% of the time are worthless - they create more work than they save. We build for 99.9%+ reliability with proper error handling and monitoring.
+
+PARTNERSHIP
+We're not a vendor you hire and forget. We're a partner invested in your operational success. Your wins are our wins.
+
+PRAGMATISM
+We recommend the simplest solution that works, even if it's not the most technically impressive. Boring technology that works beats cutting-edge technology that breaks.
+
+==================================================
+WHO WE SERVE BEST
+==================================================
+
+IDEAL INDUSTRIES
+- E-commerce and retail
+- Professional services (agencies, consulting, legal, accounting)
+- SaaS and software companies
+- Manufacturing and distribution
+- Healthcare and medical practices
+- Real estate and property management
+
+IDEAL COMPANY STAGE
+- Revenue: $500K - $10M annually
+- Employees: 5-50 people
+- Growth stage: Scaling but still hands-on
+- Tech maturity: Using SaaS tools but minimal custom automation
+
+IDEAL SITUATION
+- Spending 10+ hours/week on repetitive tasks
+- Using multiple disconnected tools (CRM, accounting, project management, etc.)
+- Losing revenue due to manual process delays
+- Ready to invest in operational efficiency
+
+==================================================
+WHAT WE DON'T DO
+==================================================
+
+To set clear expectations, we are NOT:
+- A custom software development agency (we automate, we don't build apps)
+- An IT department or help desk
+- A business process consulting firm (we automate existing processes, not redesign them)
+- Offshore outsourcing (we're a U.S.-based boutique consultancy)
+
+==================================================
+OUR APPROACH TO AUTOMATION
+==================================================
+
+1. IDENTIFY HIGH-ROI OPPORTUNITIES
+Not everything should be automated. We help you identify the 3-5 processes that will deliver the biggest impact.
+
+2. START WITH QUICK WINS
+We build your highest-ROI automation first so you see value within 1-2 weeks, not months.
+
+3. BUILD INCREMENTALLY
+We deliver working automations one at a time, not everything at once. You can validate value before we move to the next automation.
+
+4. ENSURE RELIABILITY
+Every automation includes proper error handling, monitoring, and alerts. If something breaks, we know immediately.
+
+5. TRANSFER KNOWLEDGE
+We document everything and train your team. You're never dependent on us to understand how your systems work.
+
+==================================================
+TYPICAL RESULTS
+==================================================
+
+Our clients typically see:
+- 10-20 hours/week saved in manual work
+- 2-4 month payback period on investment
+- 3-10x ROI in first year
+- 95%+ accuracy on automated processes
+- 99%+ uptime on critical automations
+
+These results come from focusing on high-impact automations and building for reliability from day one.
+
+==================================================
+OUR GUARANTEE
+==================================================
+
+We stand behind our work with a 30-Day ROI Guarantee:
+
+If your automation doesn't deliver the promised time/cost savings within 30 days, we'll refund your setup fee and continue working at no charge until it does.
+
+We only succeed when you succeed.
+
+==================================================
+CONTACT
+==================================================
+
+Ready to eliminate repetitive work and scale your operations?
+
+Email: hello@mataitech.com
+Website: mataitech.com
+
+Schedule a free 30-minute discovery call to discuss your biggest operational bottlenecks and explore whether automation can help.

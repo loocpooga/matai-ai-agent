@@ -1,0 +1,947 @@
+Matai Tech - Common Automation Use Cases by Department
+
+==================================================
+HOW TO USE THIS GUIDE
+==================================================
+
+This document shows common automation opportunities organized by department and function.
+
+For each use case, we show:
+- What the manual process looks like
+- The automation solution
+- Estimated time savings
+- Complexity level (Simple, Medium, Complex)
+- Typical tools involved
+
+Use this to identify opportunities in your business.
+
+==================================================
+SALES AND CRM
+==================================================
+
+USE CASE: Lead Capture and Distribution
+----------------------------------------------
+Manual process:
+- Leads come in via website form, email, phone
+- Someone manually enters into CRM
+- Sales manager manually assigns to reps
+- Rep manually notified
+- Follow-up reminders set manually
+
+Time: 10-15 minutes per lead × 50 leads/week = 8-12 hours/week
+
+Automation solution:
+- Website form → auto-create CRM lead
+- Auto-enrich with company data (Clearbit, etc.)
+- Auto-score based on fit criteria
+- Auto-assign to appropriate rep (round-robin or territory-based)
+- Auto-notify rep in Slack with lead details
+- Auto-schedule follow-up task in CRM
+
+Time after automation: 0-1 hours/week (spot checks only)
+Savings: 7-11 hours/week
+Complexity: Simple-Medium
+Tools: Website forms, CRM (HubSpot/Salesforce), Slack, Clearbit
+
+
+USE CASE: Deal Stage Updates and Notifications
+----------------------------------------------
+Manual process:
+- Rep manually updates deal stage in CRM
+- Rep manually notifies team of stage change
+- Manager manually checks pipeline
+- Rep manually updates associated tasks
+
+Time: 5-10 minutes per deal × 20 deals/week = 2-3 hours/week
+
+Automation solution:
+- Deal stage change → auto-notify team in Slack
+- Auto-create next-stage tasks
+- Auto-update forecast spreadsheet
+- Auto-send congratulations on closed-won
+- Auto-trigger customer onboarding workflow on close
+
+Time after automation: 0 hours/week (automatic)
+Savings: 2-3 hours/week
+Complexity: Simple
+Tools: CRM, Slack, Google Sheets
+
+
+USE CASE: Proposal and Quote Generation
+----------------------------------------------
+Manual process:
+- Rep creates proposal in Word/Google Docs
+- Manually updates pricing, terms, customer info
+- Manually converts to PDF
+- Manually emails to prospect
+- Manually logs in CRM
+
+Time: 30-60 minutes per proposal × 10 proposals/week = 5-10 hours/week
+
+Automation solution:
+- CRM opportunity → trigger proposal generation
+- Auto-populate template with customer data, pricing
+- Auto-generate PDF
+- Auto-send via email (with tracking)
+- Auto-log in CRM with link to proposal
+- Auto-follow-up reminder if not opened in 3 days
+
+Time after automation: 1-2 hours/week (review and customize)
+Savings: 4-8 hours/week
+Complexity: Medium
+Tools: CRM, Google Docs/PandaDoc, Email, PDF generation
+
+
+USE CASE: Sales Activity Reporting
+----------------------------------------------
+Manual process:
+- Manager manually pulls CRM data
+- Manually exports to spreadsheet
+- Manually calculates metrics (calls, emails, meetings, conversion rates)
+- Manually creates charts
+- Manually emails to executives
+
+Time: 2-3 hours per week
+
+Automation solution:
+- Scheduled daily/weekly report generation
+- Auto-pull CRM data
+- Auto-calculate key metrics
+- Auto-generate visualizations
+- Auto-email to stakeholders
+- Real-time dashboard for on-demand viewing
+
+Time after automation: 15-30 minutes/week (review and insights)
+Savings: 1.5-2.5 hours/week
+Complexity: Medium
+Tools: CRM, Google Data Studio/Tableau, Email
+
+
+==================================================
+MARKETING
+==================================================
+
+USE CASE: Lead Qualification and Routing
+----------------------------------------------
+Manual process:
+- Marketing team manually reviews form submissions
+- Manually qualifies leads (MQL vs. junk)
+- Manually sends qualified leads to sales
+- Manually updates lead source tracking
+- Manually sends nurture emails to unqualified
+
+Time: 10 minutes per lead × 100 leads/week = 17 hours/week
+
+Automation solution:
+- Form submission → auto-score based on criteria
+- High-score leads → auto-send to sales CRM
+- Medium-score leads → auto-add to nurture campaign
+- Low-score leads → auto-tag and monitor
+- Auto-update lead source and attribution
+- Auto-notify sales of hot leads
+
+Time after automation: 2-3 hours/week (review edge cases)
+Savings: 14+ hours/week
+Complexity: Medium
+Tools: Forms, Marketing automation (Mailchimp/HubSpot), CRM, Slack
+
+
+USE CASE: Social Media Posting and Scheduling
+----------------------------------------------
+Manual process:
+- Content created and approved
+- Manually upload to each platform (LinkedIn, Twitter, Facebook)
+- Manually schedule or post
+- Manually track engagement
+- Manually compile analytics
+
+Time: 30 minutes per post × 10 posts/week = 5 hours/week
+
+Automation solution:
+- Approved content in Airtable/Notion → auto-schedule
+- Auto-post to multiple platforms simultaneously
+- Auto-track engagement metrics
+- Auto-compile weekly analytics report
+- Auto-suggest best posting times based on historical engagement
+
+Time after automation: 1-2 hours/week (content creation, monitoring)
+Savings: 3-4 hours/week
+Complexity: Simple-Medium
+Tools: Social media platforms, Buffer/Hootsuite, Airtable, Analytics tools
+
+
+USE CASE: Campaign Performance Tracking
+----------------------------------------------
+Manual process:
+- Log into multiple platforms (Google Ads, Facebook Ads, LinkedIn Ads)
+- Export data to spreadsheet
+- Calculate ROAS, CPA, conversions
+- Create charts and graphs
+- Email report to team
+
+Time: 3-4 hours per week
+
+Automation solution:
+- Auto-pull data from all ad platforms
+- Auto-calculate metrics (ROAS, CPA, conversions, etc.)
+- Auto-generate dashboard (real-time)
+- Auto-email weekly summary report
+- Auto-alert if spend exceeds budget or performance drops
+
+Time after automation: 30 minutes/week (analysis and decisions)
+Savings: 2.5-3.5 hours/week
+Complexity: Medium
+Tools: Ad platforms, Google Sheets/Data Studio, Email
+
+
+USE CASE: Event Registration and Follow-Up
+----------------------------------------------
+Manual process:
+- Registrations come in via form
+- Manually add to spreadsheet
+- Manually send confirmation email
+- Manually send reminder emails
+- Manually add to CRM after event
+
+Time: 5 minutes per registrant × 50 registrants = 4+ hours per event
+
+Automation solution:
+- Registration form → auto-add to CRM and email list
+- Auto-send confirmation email
+- Auto-send reminder emails (1 week, 1 day before)
+- Auto-add to event segment
+- Auto-send post-event survey
+- Auto-create follow-up tasks for sales team
+
+Time after automation: 30 minutes (monitoring and adjustments)
+Savings: 3.5+ hours per event
+Complexity: Simple
+Tools: Registration platform, CRM, Email marketing, Forms
+
+
+==================================================
+OPERATIONS AND ADMIN
+==================================================
+
+USE CASE: Invoice Processing and Data Entry
+----------------------------------------------
+Manual process:
+- Receive invoice via email
+- Download and save to folder
+- Manually enter into accounting system
+- Manually update internal tracking spreadsheet
+- Manually file and categorize
+
+Time: 10 minutes per invoice × 100 invoices/month = 17 hours/month
+
+Automation solution:
+- Invoice received via email → auto-extract data (AI)
+- Auto-create bill in QuickBooks/Xero
+- Auto-categorize by vendor and account
+- Auto-save to Google Drive in correct folder
+- Auto-update tracking spreadsheet
+- Auto-flag if approval needed
+
+Time after automation: 2-3 hours/month (review and approve)
+Savings: 14+ hours/month
+Complexity: Medium-Complex
+Tools: Email, AI OCR (GPT-4 Vision), Accounting software, Google Drive
+
+
+USE CASE: Employee Onboarding
+----------------------------------------------
+Manual process:
+- Manually create accounts (email, Slack, tools)
+- Manually send welcome email and info
+- Manually schedule orientation meetings
+- Manually send equipment
+- Manually track onboarding checklist
+
+Time: 4-6 hours per new employee
+
+Automation solution:
+- New hire in HRIS → trigger onboarding workflow
+- Auto-create accounts where possible
+- Auto-send welcome email sequence
+- Auto-schedule orientation meetings
+- Auto-assign onboarding buddy
+- Auto-send equipment request to IT
+- Auto-create and assign onboarding checklist
+- Auto-send reminders for incomplete items
+
+Time after automation: 1-2 hours per new employee (personal touch, meetings)
+Savings: 3-4 hours per new employee
+Complexity: Medium-Complex
+Tools: HRIS, Email, Calendar, Slack, IT systems, Checklist tools
+
+
+USE CASE: Meeting Scheduling and Coordination
+----------------------------------------------
+Manual process:
+- Back-and-forth emails to find time
+- Manually check multiple calendars
+- Manually send meeting invites
+- Manually send reminders
+- Manually send agenda and prep materials
+
+Time: 10-15 minutes per meeting × 20 meetings/week = 3-5 hours/week
+
+Automation solution:
+- Use Calendly or similar for easy scheduling
+- Auto-check calendar availability
+- Auto-send meeting invite
+- Auto-send reminder emails (1 day, 1 hour before)
+- Auto-send agenda and prep materials
+- Auto-create post-meeting follow-up tasks
+
+Time after automation: 1-2 hours/week (managing complex meetings)
+Savings: 2-3 hours/week
+Complexity: Simple
+Tools: Calendly, Google Calendar, Email, CRM
+
+
+USE CASE: Expense Report Processing
+----------------------------------------------
+Manual process:
+- Employee submits expense report
+- Manager manually reviews and approves
+- Finance manually enters into accounting
+- Finance manually reimburses employee
+- Manually tracks by department/project
+
+Time: 15 minutes per report × 40 reports/month = 10 hours/month
+
+Automation solution:
+- Employee submits via mobile app → auto-extract receipt data (AI OCR)
+- Auto-route to manager for approval
+- Manager approves in Slack/Email
+- Auto-create bill in accounting system
+- Auto-trigger reimbursement
+- Auto-categorize and track
+- Auto-flag policy violations
+
+Time after automation: 2-3 hours/month (review exceptions)
+Savings: 7-8 hours/month
+Complexity: Medium
+Tools: Expense app (Expensify/Divvy), Accounting software, Slack, AI OCR
+
+
+==================================================
+CUSTOMER SUCCESS AND SUPPORT
+==================================================
+
+USE CASE: Support Ticket Routing and Categorization
+----------------------------------------------
+Manual process:
+- Ticket received via email/chat
+- Support person manually reads and categorizes
+- Manually assigns to appropriate team member
+- Manually sets priority
+- Manually logs in tracking system
+
+Time: 3-5 minutes per ticket × 200 tickets/week = 10-17 hours/week
+
+Automation solution:
+- Ticket received → AI auto-categorizes (technical, billing, general)
+- Auto-assigns based on category, workload, expertise
+- Auto-sets priority based on keywords and customer tier
+- Auto-logs in support system
+- Auto-notifies assigned person in Slack
+- Auto-suggest knowledge base articles to customer
+
+Time after automation: 2-3 hours/week (review edge cases)
+Savings: 8-14 hours/week
+Complexity: Medium
+Tools: Support platform (Zendesk/Intercom), AI (GPT-4), Slack, CRM
+
+
+USE CASE: Customer Health Monitoring and Alerts
+----------------------------------------------
+Manual process:
+- Manually check usage data
+- Manually identify at-risk customers
+- Manually reach out
+- Manually track in spreadsheet
+
+Time: 5-10 hours per week
+
+Automation solution:
+- Daily calculation of customer health score
+- Based on: usage frequency, feature adoption, support tickets, payment history
+- Auto-alert CSM when health score drops
+- Auto-trigger outreach sequence
+- Auto-create task in CRM
+- Auto-update health dashboard
+
+Time after automation: 2-3 hours/week (proactive outreach)
+Savings: 3-7 hours/week
+Complexity: Medium-Complex
+Tools: Product analytics, CRM, Slack, Email
+
+
+USE CASE: Customer Feedback Collection and Analysis
+----------------------------------------------
+Manual process:
+- Manually send NPS/CSAT surveys
+- Manually compile responses
+- Manually analyze and categorize feedback
+- Manually share insights with team
+
+Time: 3-4 hours per month
+
+Automation solution:
+- Auto-send surveys based on triggers (post-purchase, post-support, quarterly)
+- Auto-collect and aggregate responses
+- AI auto-categorize feedback themes
+- Auto-generate sentiment analysis
+- Auto-create dashboard with insights
+- Auto-alert team to negative feedback immediately
+- Auto-create follow-up tasks for detractors
+
+Time after automation: 1 hour per month (analysis and action planning)
+Savings: 2-3 hours per month
+Complexity: Medium
+Tools: Survey tool (Typeform/SurveyMonkey), AI (GPT-4), Dashboard, Slack
+
+
+USE CASE: Onboarding New Customers
+----------------------------------------------
+Manual process:
+- Manually send welcome email
+- Manually schedule kickoff call
+- Manually send training materials
+- Manually check usage
+- Manually follow up
+
+Time: 2-3 hours per new customer
+
+Automation solution:
+- New customer signup → trigger onboarding sequence
+- Auto-send welcome email with getting started guide
+- Auto-schedule kickoff call (Calendly link)
+- Auto-send training materials over first 2 weeks
+- Auto-monitor usage and engagement
+- Auto-alert CSM if customer not engaging
+- Auto-send check-in at 30 days
+
+Time after automation: 30-60 minutes per customer (kickoff call, personalized follow-up)
+Savings: 1-2 hours per new customer
+Complexity: Simple-Medium
+Tools: CRM, Email, Calendar, Product analytics, Onboarding platform
+
+
+==================================================
+E-COMMERCE AND FULFILLMENT
+==================================================
+
+USE CASE: Order Processing and Fulfillment
+----------------------------------------------
+Manual process:
+- Order comes in from Shopify/website
+- Manually create invoice in QuickBooks
+- Manually update inventory spreadsheet
+- Manually send packing slip to warehouse
+- Manually send confirmation email to customer
+- Manually log order number
+
+Time: 5-10 minutes per order × 200 orders/week = 17-33 hours/week
+
+Automation solution:
+- Order received → trigger automation
+- Auto-create invoice in accounting
+- Auto-update inventory
+- Auto-send packing slip to warehouse (email or print)
+- Auto-send confirmation email with tracking
+- Auto-log in order tracking system
+- Auto-notify team in Slack for large orders
+
+Time after automation: 2-3 hours/week (handle exceptions, quality checks)
+Savings: 15-30 hours/week
+Complexity: Simple-Medium
+Tools: E-commerce platform, QuickBooks, Inventory system, Email, Shipping software
+
+
+USE CASE: Inventory Reordering and Alerts
+----------------------------------------------
+Manual process:
+- Manually check inventory levels
+- Manually calculate reorder points
+- Manually email vendors with PO
+- Manually track delivery
+
+Time: 3-5 hours per week
+
+Automation solution:
+- Real-time inventory monitoring
+- Auto-calculate reorder point based on sales velocity
+- Auto-alert when stock low
+- Auto-generate PO and email to vendor
+- Auto-track delivery date
+- Auto-alert if delivery delayed
+
+Time after automation: 1 hour per week (review and approve)
+Savings: 2-4 hours per week
+Complexity: Medium
+Tools: Inventory system, Email, Vendor portals, Spreadsheets
+
+
+USE CASE: Return and Refund Processing
+----------------------------------------------
+Manual process:
+- Customer requests return via email
+- Manually send return instructions
+- Manually create return label
+- Manually track return shipment
+- Manually process refund
+- Manually update inventory
+- Manually log in customer record
+
+Time: 15 minutes per return × 20 returns/week = 5 hours/week
+
+Automation solution:
+- Return request → auto-send return instructions
+- Auto-generate return label
+- Auto-track shipment
+- When received → auto-process refund
+- Auto-update inventory
+- Auto-log in customer record
+- Auto-send confirmation email
+
+Time after automation: 1 hour/week (quality checks, exceptions)
+Savings: 4 hours/week
+Complexity: Medium
+Tools: E-commerce platform, Shipping software, Accounting, Email
+
+
+USE CASE: Abandoned Cart Recovery
+----------------------------------------------
+Manual process:
+- Manually identify abandoned carts
+- Manually email customers
+- Manually track conversions
+
+Time: 3-4 hours per week
+
+Automation solution:
+- Cart abandoned for 1 hour → auto-send reminder email
+- Cart abandoned for 24 hours → auto-send email with discount code
+- Cart abandoned for 3 days → auto-send final reminder
+- Auto-track which emails convert
+- Auto-report on recovery rate
+
+Time after automation: 30 minutes per week (monitor performance)
+Savings: 2.5-3.5 hours per week
+Complexity: Simple
+Tools: E-commerce platform, Email marketing
+
+
+==================================================
+FINANCE AND ACCOUNTING
+==================================================
+
+USE CASE: Accounts Receivable Tracking and Reminders
+----------------------------------------------
+Manual process:
+- Manually check which invoices are overdue
+- Manually send reminder emails
+- Manually escalate for collections
+- Manually update AR aging report
+
+Time: 4-6 hours per week
+
+Automation solution:
+- Daily check of unpaid invoices
+- Auto-send reminder email at 7 days overdue
+- Auto-send escalation email at 14 days overdue
+- Auto-notify accounting manager at 30 days overdue
+- Auto-update AR aging dashboard
+- Auto-create collection task in CRM
+
+Time after automation: 1-2 hours per week (handle escalations)
+Savings: 3-4 hours per week
+Complexity: Simple-Medium
+Tools: QuickBooks/Xero, Email, CRM, Dashboard
+
+
+USE CASE: Bank Reconciliation and Transaction Categorization
+----------------------------------------------
+Manual process:
+- Download bank transactions
+- Manually categorize each transaction
+- Manually match to invoices/receipts
+- Manually reconcile in accounting system
+
+Time: 3-5 hours per week
+
+Automation solution:
+- Auto-import bank transactions
+- AI auto-categorize based on description and history
+- Auto-match to existing invoices/bills
+- Auto-flag unmatched for review
+- Auto-reconcile when confident
+- Auto-generate reconciliation report
+
+Time after automation: 1-2 hours per week (review and approve)
+Savings: 2-3 hours per week
+Complexity: Medium-Complex
+Tools: Accounting software, Banking API, AI categorization
+
+
+USE CASE: Monthly Financial Reporting
+----------------------------------------------
+Manual process:
+- Pull data from accounting system
+- Export to Excel
+- Create P&L, balance sheet, cash flow statements
+- Calculate ratios and metrics
+- Create visualizations
+- Format and email to stakeholders
+
+Time: 4-8 hours per month
+
+Automation solution:
+- Scheduled month-end report generation
+- Auto-pull data from accounting
+- Auto-generate standard financial statements
+- Auto-calculate key metrics and ratios
+- Auto-create visualizations
+- Auto-generate PDF and email to stakeholders
+- Real-time dashboard for on-demand viewing
+
+Time after automation: 1-2 hours per month (analysis and insights)
+Savings: 3-6 hours per month
+Complexity: Medium
+Tools: Accounting software, Google Sheets/Excel, Data Studio, Email
+
+
+==================================================
+HR AND PEOPLE OPS
+==================================================
+
+USE CASE: Time Off Request Processing
+----------------------------------------------
+Manual process:
+- Employee submits time off request via email
+- Manager manually approves
+- HR manually logs in tracking system
+- HR manually updates calendar
+- HR manually calculates remaining balance
+
+Time: 10 minutes per request × 80 requests/month = 13 hours/month
+
+Automation solution:
+- Employee submits via form or tool
+- Auto-route to manager for approval
+- Manager approves in Slack/Email (one-click)
+- Auto-log in HR system
+- Auto-update team calendar
+- Auto-calculate and display remaining balance
+- Auto-notify team of upcoming absences
+
+Time after automation: 1-2 hours/month (edge cases)
+Savings: 11-12 hours/month
+Complexity: Simple-Medium
+Tools: HRIS, Forms, Calendar, Slack/Email
+
+
+USE CASE: Performance Review Coordination
+----------------------------------------------
+Manual process:
+- Manually send review forms to employees and managers
+- Manually track completion
+- Manually send reminders
+- Manually compile results
+- Manually schedule review meetings
+
+Time: 15-20 hours per review cycle (quarterly or annually)
+
+Automation solution:
+- Review cycle starts → auto-send forms
+- Auto-track completion status
+- Auto-send reminders to incomplete
+- Auto-compile results when submitted
+- Auto-schedule review meetings (Calendly)
+- Auto-generate summary report
+- Auto-archive in employee records
+
+Time after automation: 3-5 hours per cycle (analysis, follow-up)
+Savings: 12-15 hours per cycle
+Complexity: Medium
+Tools: HRIS, Forms (Google Forms/Typeform), Calendar, Email
+
+
+==================================================
+MANUFACTURING AND SUPPLY CHAIN
+==================================================
+
+USE CASE: Production Scheduling and Material Availability
+----------------------------------------------
+Manual process:
+- Check inventory levels manually
+- Manually create production schedule
+- Manually verify material availability
+- Manually notify production team
+
+Time: 10-15 hours per week
+
+Automation solution:
+- Real-time inventory monitoring
+- Auto-calculate available capacity
+- Auto-generate production schedule based on orders and materials
+- Auto-flag material shortages before production date
+- Auto-notify production team of schedule
+- Auto-adjust schedule if delays occur
+
+Time after automation: 3-5 hours per week (review and optimize)
+Savings: 7-10 hours per week
+Complexity: Complex
+Tools: ERP, Inventory system, Production planning tools, Slack/Email
+
+
+USE CASE: Vendor Purchase Order Management
+----------------------------------------------
+Manual process:
+- Manually create PO document
+- Manually email to vendor
+- Manually track delivery date
+- Manually follow up on delays
+- Manually log in accounting when received
+
+Time: 30 minutes per PO × 40 POs/month = 20 hours/month
+
+Automation solution:
+- Reorder triggered → auto-generate PO from template
+- Auto-email to vendor
+- Auto-log expected delivery date
+- Auto-track shipment if tracking available
+- Auto-follow up if delivery date passes
+- Auto-create bill in accounting when received
+- Auto-update inventory
+
+Time after automation: 3-5 hours/month (review and exceptions)
+Savings: 15-17 hours/month
+Complexity: Medium
+Tools: ERP, Email, Accounting, Inventory system
+
+
+==================================================
+REAL ESTATE AND PROPERTY MANAGEMENT
+==================================================
+
+USE CASE: Tenant Maintenance Request Management
+----------------------------------------------
+Manual process:
+- Receive request via email, text, phone
+- Manually log in spreadsheet
+- Manually assign to vendor or staff
+- Manually coordinate scheduling
+- Manually follow up on completion
+- Manually update tenant
+
+Time: 15-20 minutes per request × 150 requests/month = 38-50 hours/month
+
+Automation solution:
+- Request received → auto-log in system
+- AI auto-categorize (plumbing, electrical, etc.)
+- Auto-assign to appropriate vendor/staff
+- Auto-send to vendor with tenant contact info
+- Auto-track status
+- Auto-send updates to tenant at milestones
+- Auto-create invoice in accounting when complete
+- Auto-request feedback from tenant
+
+Time after automation: 8-10 hours/month (complex requests, quality checks)
+Savings: 30-40 hours/month
+Complexity: Medium-Complex
+Tools: Request tracking (Airtable), Twilio (SMS), Email, Accounting, AI categorization
+
+
+USE CASE: Lease Renewal Management
+----------------------------------------------
+Manual process:
+- Manually track lease end dates
+- Manually send renewal notices
+- Manually collect updated information
+- Manually create new lease
+- Manually update records
+
+Time: 45-60 minutes per renewal × 30 renewals/month = 23-30 hours/month
+
+Automation solution:
+- 90 days before lease end → auto-send renewal notice
+- 60 days → auto-send reminder with terms
+- 30 days → auto-escalate if no response
+- Tenant accepts → auto-generate new lease from template
+- Auto-collect e-signature (DocuSign)
+- Auto-update property management system
+- Auto-notify accounting to adjust rent if changed
+
+Time after automation: 5-8 hours/month (negotiations, custom terms)
+Savings: 18-22 hours/month
+Complexity: Medium
+Tools: Property management system, Email, DocuSign, Calendar
+
+
+==================================================
+HEALTHCARE AND MEDICAL PRACTICES
+==================================================
+
+USE CASE: Patient Appointment Reminders and Follow-Up
+----------------------------------------------
+Manual process:
+- Staff manually calls each patient to remind
+- Manually reschedules no-shows
+- Manually sends follow-up instructions
+
+Time: 5 minutes per patient × 100 appointments/week = 8+ hours/week
+
+Automation solution:
+- Appointment scheduled → auto-send confirmation
+- 48 hours before → auto-send reminder (SMS or email)
+- 24 hours before → auto-send final reminder
+- No-show detected → auto-send rescheduling link
+- After visit → auto-send follow-up instructions
+- Auto-request online review
+
+Time after automation: 1-2 hours/week (handle exceptions)
+Savings: 6-7 hours/week
+Complexity: Simple
+Tools: EHR, Twilio (SMS), Email, Calendly
+
+
+USE CASE: Insurance Verification
+----------------------------------------------
+Manual process:
+- Manually call or check insurance portal
+- Manually verify coverage
+- Manually log in patient record
+- Manually calculate patient responsibility
+
+Time: 10-15 minutes per patient × 80 patients/week = 13-20 hours/week
+
+Automation solution:
+- Appointment scheduled → auto-verify insurance
+- Auto-check eligibility via API
+- Auto-calculate patient responsibility
+- Auto-log in EHR
+- Auto-flag issues for staff review
+- Auto-notify patient of responsibility
+
+Time after automation: 3-5 hours/week (handle denials, errors)
+Savings: 10-15 hours/week
+Complexity: Complex
+Tools: EHR, Insurance APIs, Email
+
+
+==================================================
+PROFESSIONAL SERVICES (AGENCIES, CONSULTING)
+==================================================
+
+USE CASE: Time Tracking and Billing
+----------------------------------------------
+Manual process:
+- Manually log time in spreadsheet or tool
+- Manually compile billable hours by client
+- Manually create invoices
+- Manually send to clients
+- Manually track payment
+
+Time: 5-8 hours per month
+
+Automation solution:
+- Time tracked in time tracking tool
+- End of month → auto-compile billable hours
+- Auto-generate invoices from template
+- Auto-send invoices to clients
+- Auto-track payment status
+- Auto-send payment reminders
+- Auto-log in accounting when paid
+
+Time after automation: 1-2 hours per month (review and approve)
+Savings: 4-6 hours per month
+Complexity: Simple-Medium
+Tools: Time tracking (Harvest/Toggl), Accounting, Email
+
+
+USE CASE: Client Reporting
+----------------------------------------------
+Manual process:
+- Manually compile data from various tools
+- Manually create report in slides or doc
+- Manually calculate metrics
+- Manually send to client
+- Manually log delivery in CRM
+
+Time: 45-90 minutes per client × 30 clients/month = 23-45 hours/month
+
+Automation solution:
+- Auto-pull data from all sources
+- Auto-generate report from template
+- Auto-calculate metrics and KPIs
+- Auto-generate visualizations
+- Auto-send to client on schedule
+- Auto-log in CRM
+- Real-time dashboard for clients (reduces ad-hoc requests)
+
+Time after automation: 5-10 hours/month (analysis and insights)
+Savings: 18-35 hours/month
+Complexity: Medium
+Tools: Various data sources, Google Slides/Docs, CRM, Email, Dashboard tools
+
+
+==================================================
+IDENTIFYING YOUR AUTOMATION OPPORTUNITIES
+==================================================
+
+QUESTIONS TO ASK
+----------------------------------------------
+1. What tasks do you or your team do repeatedly (daily, weekly, monthly)?
+2. What takes a surprisingly long time for how simple it seems?
+3. What falls through the cracks due to manual tracking?
+4. What requires copying data from one system to another?
+5. What do you wish happened automatically?
+6. What errors occur due to manual data entry?
+7. What reports take hours to create?
+8. What notifications or reminders are sent manually?
+9. What approvals require email chains?
+10. What coordination requires back-and-forth communication?
+
+HIGH-ROI INDICATORS
+----------------------------------------------
+✓ High frequency (done often)
+✓ Time-consuming (takes significant time)
+✓ Rule-based (clear decision criteria)
+✓ Multi-system (requires accessing multiple tools)
+✓ Error-prone (manual entry or calculation)
+✓ Creates bottlenecks (delays other work)
+✓ Scales poorly (more work as business grows)
+
+AUTOMATION SELECTION FRAMEWORK
+----------------------------------------------
+Score potential automations on:
+
+1. Time savings potential (1-5)
+2. Frequency (1-5)
+3. Impact on business (1-5)
+4. Implementation complexity (1-5, lower is better)
+5. Number of people affected (1-5)
+
+Prioritize high total scores.
+
+==================================================
+READY TO AUTOMATE?
+==================================================
+
+Not sure which of these applies to your business?
+
+Schedule a free 30-minute discovery call:
+- We'll discuss your specific processes
+- Identify your highest-ROI opportunities
+- Provide estimated time/cost savings
+- Recommend which package fits
+
+Contact:
+Email: hello@mataitech.com
+Website: mataitech.com
+
+Let's eliminate the manual work holding your business back.

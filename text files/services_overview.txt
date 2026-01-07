@@ -1,0 +1,20 @@
+Matai Tech — Services Overview
+
+Matai Tech helps small and mid-sized businesses automate operations, connect tools, and get reliable reporting.
+
+Core Services
+
+Business Process Automation
+- Automate repetitive tasks across CRMs, forms, email, calendars, and spreadsheets.
+
+CRM Integrations and Data Sync
+- Keep data consistent across systems and prevent duplication.
+
+Dashboards and Reporting
+- Convert operational data into clear metrics and dashboards.
+
+Data Cleanup and Migration
+- Normalize, deduplicate, and validate data during imports and transitions.
+
+Practical AI Features
+- AI summaries, internal Q&A, and workflow assistance using company data.

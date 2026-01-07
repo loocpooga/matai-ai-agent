@@ -1,0 +1,32 @@
+MATAI TECH COMPANY INFORMATION
+
+About Us:
+Matai Tech is a technology consulting company founded by Luke Pauga, a data engineer with extensive experience working with operations-heavy industries. We specialize in business automation, process optimization, and custom software solutions.
+
+Services Offered:
+1. Process Automation - We help businesses eliminate repetitive manual tasks through intelligent automation workflows. Our solutions integrate with platforms like Monday.com, Salesforce, and HubSpot.
+
+2. Data Visibility & Analytics - We build custom dashboards and reporting systems that transform scattered data into actionable insights.
+
+3. System Integration - We connect your existing tools and platforms to create seamless, efficient workflows. We have experience with Salesforce, HubSpot, Zapier, Monday.com, Pipedrive, Google Sheets, GoHighLevel, JobNimbus, Housecall Pro, Acculynx, Enerflo, Leap, and Subcontractor Hub.
+
+Recent Projects:
+- Marquis Pools: Built a custom web application for managing pool construction projects. The system tracks estimates and projects through automated pipeline stages with smart reminders. This replaced manual spreadsheets and saves the client over 10 hours per week.
+
+- Monday.com Integration: Connected Monday.com project boards to a client's accounting software and customer database. Automated status updates and invoice generation, saving 15+ hours per week.
+
+- Salesforce CRM Integration: Integrated Salesforce with marketing platforms and scheduling tools for a sales team. The automation increased deal closure rates by 40%.
+
+Contact Information:
+Email: luke@mataitech.co
+Website: www.mataitech.co
+Scheduling: Available for 30-minute consultations via Cal.com
+
+Pricing Philosophy:
+We focus on delivering measurable ROI through automation. Our solutions typically pay for themselves within 2-3 months through time savings and increased efficiency. We offer both project-based pricing and ongoing monthly retainers for maintenance and support.
+
+Target Industries:
+We work primarily with operations-heavy industries including construction, pool services, field services, home improvement, solar installation, and professional services firms. These businesses typically struggle with manual data entry, disconnected systems, and lack of visibility into their operations.
+
+Why Choose Matai Tech:
+Unlike generic consultants, we bring real data engineering expertise from working directly in operations-heavy industries. We understand the pain points because we've experienced them firsthand. Our solutions are practical, focused on ROI, and designed to actually get used (not collect dust).
