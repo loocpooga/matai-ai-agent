@@ -4,7 +4,7 @@
     config: {
       position: "bottom-right",
       primaryColor: "#2563eb",
-      baseUrl: window.location.origin, // Will be replaced with production URL
+      baseUrl: "https://matai-ai-agent.vercel.app",
     },
 
     init: function (options) {
