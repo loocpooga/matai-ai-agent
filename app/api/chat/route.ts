@@ -4,9 +4,21 @@ import { getVectorStore } from "@/lib/vectorStore";
 
 export async function POST(request: NextRequest) {
   try {
+    // Debug: Check if API key exists
+    const apiKey = process.env.OPENAI_API_KEY;
+    console.log("API Key exists:", !!apiKey);
+    console.log("API Key prefix:", apiKey?.substring(0, 10));
+
+    if (!apiKey) {
+      return NextResponse.json(
+        { error: "OpenAI API key not configured" },
+        { status: 500 }
+      );
+    }
+
     // Initialize OpenAI inside the function to ensure env vars are loaded
     const openai = new OpenAI({
-      apiKey: process.env.OPENAI_API_KEY,
+      apiKey: apiKey,
     });
     const { messages } = await request.json();
 
