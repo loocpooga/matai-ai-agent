@@ -74,7 +74,7 @@ export default function ChatWidget() {
   return (
     <div className="flex flex-col h-screen bg-white">
       {/* Header */}
-      <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white p-4 flex items-center justify-between shadow-lg">
+      <div className="bg-gradient-to-r from-blue-500 to-blue-600 text-white p-4 flex items-center justify-between shadow-lg">
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-blue-600 font-bold text-lg">
             M
@@ -207,7 +207,7 @@ export default function ChatWidget() {
           <button
             onClick={handleSend}
             disabled={isLoading || !input.trim()}
-            className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-3 rounded-xl transition disabled:opacity-50 disabled:cursor-not-allowed"
+            className="bg-blue-500 hover:bg-blue-600 text-white font-medium px-6 py-3 rounded-xl transition disabled:opacity-50 disabled:cursor-not-allowed"
           >
             Send
           </button>

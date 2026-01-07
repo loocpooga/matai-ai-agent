@@ -3,7 +3,7 @@
   var MataiChat = {
     config: {
       position: "bottom-right",
-      primaryColor: "#2563eb",
+      primaryColor: "#3b82f6",
       baseUrl: "https://matai-ai-agent.vercel.app",
     },
 
@@ -66,6 +66,24 @@
       }
 
       style.textContent = `
+        @keyframes matai-pulse {
+          0%, 100% {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), 0 0 0 0 rgba(59, 130, 246, 0.7);
+          }
+          50% {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), 0 0 0 10px rgba(59, 130, 246, 0);
+          }
+        }
+
+        @keyframes matai-bounce {
+          0%, 100% {
+            transform: translateY(0);
+          }
+          50% {
+            transform: translateY(-5px);
+          }
+        }
+
         #matai-chat-bubble {
           position: fixed;
           ${positionStyles}
@@ -80,11 +98,13 @@
           box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
           transition: all 0.3s ease;
           z-index: 999999;
+          animation: matai-pulse 2s infinite;
         }
 
         #matai-chat-bubble:hover {
           transform: scale(1.1);
-          box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+          animation: matai-pulse 2s infinite, matai-bounce 0.5s ease;
         }
 
         #matai-chat-container {
