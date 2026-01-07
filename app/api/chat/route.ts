@@ -2,12 +2,12 @@ import { NextRequest, NextResponse } from "next/server";
 import OpenAI from "openai";
 import { getVectorStore } from "@/lib/vectorStore";
 
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
-});
-
 export async function POST(request: NextRequest) {
   try {
+    // Initialize OpenAI inside the function to ensure env vars are loaded
+    const openai = new OpenAI({
+      apiKey: process.env.OPENAI_API_KEY,
+    });
     const { messages } = await request.json();
 
     if (!messages || !Array.isArray(messages)) {
