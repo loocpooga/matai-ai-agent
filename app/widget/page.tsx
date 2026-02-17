@@ -74,19 +74,19 @@ export default function ChatWidget() {
   return (
     <div className="flex flex-col h-screen bg-white">
       {/* Header */}
-      <div className="bg-gradient-to-r from-blue-500 to-blue-600 text-white p-4 flex items-center justify-between shadow-lg">
+      <div className="text-white p-4 flex items-center justify-between shadow-lg" style={{background: "#0A6E6E"}}>
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-blue-600 font-bold text-lg">
-            M
-          </div>
           <div>
             <h2 className="font-semibold text-lg">Matai Tech Assistant</h2>
-            <p className="text-xs text-blue-100">Ask us anything</p>
+            <p className="text-xs" style={{color: "rgba(255,255,255,0.7)"}}>Ask us anything</p>
           </div>
         </div>
         <button
           onClick={handleClose}
-          className="w-8 h-8 flex items-center justify-center rounded-full hover:bg-blue-600 transition"
+          className="w-8 h-8 flex items-center justify-center rounded-full transition"
+          style={{background: "rgba(255,255,255,0.1)"}}
+          onMouseEnter={e => (e.currentTarget.style.background = "rgba(255,255,255,0.2)")}
+          onMouseLeave={e => (e.currentTarget.style.background = "rgba(255,255,255,0.1)")}
           aria-label="Close chat"
         >
           <svg
@@ -157,9 +157,10 @@ export default function ChatWidget() {
               <div
                 className={`max-w-[80%] px-4 py-3 rounded-2xl ${
                   msg.role === "user"
-                    ? "bg-blue-600 text-white rounded-tr-sm"
+                    ? "text-white rounded-tr-sm"
                     : "bg-gray-100 text-gray-900 rounded-tl-sm"
                 }`}
+                style={msg.role === "user" ? {background: "#0A6E6E"} : undefined}
               >
                 {msg.role === "assistant" ? (
                   <div className="prose prose-sm max-w-none [&>p]:mb-2 [&>ul]:mb-2 [&>ol]:mb-2 [&>*:last-child]:mb-0">
@@ -201,13 +202,17 @@ export default function ChatWidget() {
             onChange={(e) => setInput(e.target.value)}
             onKeyPress={(e) => e.key === "Enter" && handleSend()}
             placeholder="Type your message..."
-            className="flex-1 px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100 text-sm"
+            className="flex-1 px-4 py-3 border border-gray-300 rounded-xl focus:outline-none text-sm"
+            style={{"--tw-ring-color": "#0A6E6E"} as React.CSSProperties}
+            onFocus={e => { e.currentTarget.style.borderColor = "#0A6E6E"; e.currentTarget.style.boxShadow = "0 0 0 2px rgba(10,110,110,0.15)"; }}
+            onBlur={e => { e.currentTarget.style.borderColor = "#D1D5DB"; e.currentTarget.style.boxShadow = "none"; }}
             disabled={isLoading}
           />
           <button
             onClick={handleSend}
             disabled={isLoading || !input.trim()}
-            className="bg-blue-500 hover:bg-blue-600 text-white font-medium px-6 py-3 rounded-xl transition disabled:opacity-50 disabled:cursor-not-allowed"
+            className="text-white font-medium px-6 py-3 rounded-xl transition disabled:opacity-50 disabled:cursor-not-allowed"
+            style={{background: "#0A6E6E"}}
           >
             Send
           </button>
