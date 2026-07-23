@@ -99,29 +99,31 @@ const tools: OpenAI.Chat.Completions.ChatCompletionTool[] = [
   },
 ];
 
+// Leads are delivered through Luke's own n8n instance
+// (workflow "Fin - Lead Intake": webhook -> Gmail)
 async function sendLeadEmail(args: {
   name?: string;
   contact: string;
   business?: string;
   summary: string;
 }): Promise<boolean> {
+  const webhookUrl = process.env.N8N_LEAD_WEBHOOK;
+  if (!webhookUrl) {
+    console.error("N8N_LEAD_WEBHOOK is not configured");
+    return false;
+  }
   try {
-    const res = await fetch("https://api.web3forms.com/submit", {
+    const res = await fetch(webhookUrl, {
       method: "POST",
-      headers: { "Content-Type": "application/json", Accept: "application/json" },
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        access_key:
-          process.env.WEB3FORMS_KEY || "02927c79-7bd3-4949-9540-863dc1e7a34c",
-        subject: `Fin captured a lead: ${args.name || args.contact}`,
-        from_name: "Fin (mataitech.co chat)",
-        name: args.name || "Not given",
+        name: args.name || "",
         contact: args.contact,
-        business: args.business || "Not given",
-        message: `Fin captured a lead from the website chat.\n\nName: ${args.name || "not given"}\nContact: ${args.contact}\nBusiness: ${args.business || "not given"}\n\nWhat they need: ${args.summary}`,
+        business: args.business || "",
+        summary: args.summary,
       }),
     });
-    const data = await res.json();
-    return !!data.success;
+    return res.ok;
   } catch {
     return false;
   }
