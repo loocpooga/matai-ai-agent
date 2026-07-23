@@ -1,12 +1,32 @@
 import { NextRequest } from "next/server";
 import OpenAI from "openai";
-import { getVectorStore } from "@/lib/vectorStore";
-import { supabase } from "@/lib/supabase";
+import fs from "fs";
+import path from "path";
 
 export const maxDuration = 60;
 
 const MAX_MESSAGES = 24;
 const MAX_MESSAGE_CHARS = 1500;
+
+// The whole knowledge base is ~14KB, so it ships inside the prompt on every
+// request: perfect recall, no vector database to maintain or break.
+let knowledgeCache: string | null = null;
+function getKnowledge(): string {
+  if (knowledgeCache === null) {
+    try {
+      const dir = path.join(process.cwd(), "text files");
+      knowledgeCache = fs
+        .readdirSync(dir)
+        .filter((f) => f.endsWith(".txt"))
+        .map((f) => fs.readFileSync(path.join(dir, f), "utf-8").trim())
+        .join("\n\n==========\n\n");
+    } catch (err) {
+      console.error("Failed to load knowledge base:", err);
+      knowledgeCache = "";
+    }
+  }
+  return knowledgeCache;
+}
 
 // Best-effort per-instance rate limiting (serverless instances are ephemeral,
 // but this still stops casual abuse from a single visitor)
@@ -36,13 +56,13 @@ Voice:
 - Never use em dashes.
 
 Honesty rules (non-negotiable):
-- Answer ONLY from the provided context. If the context doesn't cover something, say you don't know and suggest asking Luke directly on a call.
-- NEVER invent prices, numbers, case studies, clients, or capabilities. Pricing depends on scope; Luke quotes a fixed price after a free 30-minute call.
-- Never quote specific dollar amounts for Matai Tech's services, even if a document in the context contains them. Pricing is only ever scoped on the call.
+- Answer ONLY from the knowledge base below. If it doesn't cover something, say you don't know and suggest asking Luke directly on a call.
+- NEVER invent prices, numbers, case studies, clients, or capabilities.
+- Never quote specific dollar amounts for Matai Tech's services. Pricing depends on scope; Luke quotes a fixed price after a free 30-minute call.
 - Marquis Pools is the only client case study. Luke's broader trades experience is professional background, never "Matai client results".
 
 Your goals, in order:
-1. Answer the visitor's question accurately from context.
+1. Answer the visitor's question accurately from the knowledge base.
 2. When it fits naturally, point them to the free 30-minute call: https://cal.com/luke-pauga-hlurq5/30min
 3. If a visitor shows real interest (asks about their specific situation, pricing, timelines, or how to start), offer to take their name and email or phone number so Luke can reach out. If they share contact details, use the capture_lead tool. Never pressure; offer once, not repeatedly.
 
@@ -107,24 +127,6 @@ async function sendLeadEmail(args: {
   }
 }
 
-async function logExchange(
-  sessionId: string,
-  userMessage: string,
-  assistantMessage: string,
-  sources: string[]
-) {
-  try {
-    await supabase.from("chat_logs").insert({
-      session_id: sessionId,
-      user_message: userMessage,
-      assistant_message: assistantMessage,
-      sources,
-    });
-  } catch {
-    // Logging is best-effort; never break the chat over it
-  }
-}
-
 export async function POST(request: NextRequest) {
   if (!process.env.OPENAI_API_KEY) {
     return Response.json({ error: "Not configured" }, { status: 500 });
@@ -171,25 +173,13 @@ export async function POST(request: NextRequest) {
   const sessionId = (body.sessionId || "anonymous").slice(0, 64);
   const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
-  // Retrieval: include the previous user turn so follow-ups
-  // ("how much does THAT cost?") still find the right documents
-  const userTurns = messages.filter((m) => m.role === "user");
-  const searchQuery = userTurns.slice(-2).map((m) => m.content).join("\n");
-
-  const vectorStore = getVectorStore();
-  const relevantDocs = await vectorStore.search(searchQuery, 4);
-
-  const context =
-    relevantDocs.length > 0
-      ? `Context from Matai Tech's knowledge base:\n\n${relevantDocs
-          .map((d) => d.content)
-          .join("\n\n---\n\n")}`
-      : "No relevant context found for this question. Be honest that you don't know, and suggest asking Luke on a call.";
-
-  const sources = [...new Set(relevantDocs.map((d) => d.metadata.source))];
+  const knowledge = getKnowledge();
+  const systemContent = knowledge
+    ? `${SYSTEM_PROMPT}\n\nKNOWLEDGE BASE:\n\n${knowledge}`
+    : `${SYSTEM_PROMPT}\n\nKNOWLEDGE BASE: unavailable right now. Be honest that you can't look things up at the moment and point visitors to luke@mataitech.co or the booking link.`;
 
   const chatMessages: OpenAI.Chat.Completions.ChatCompletionMessageParam[] = [
-    { role: "system", content: `${SYSTEM_PROMPT}\n\n${context}` },
+    { role: "system", content: systemContent },
     ...messages,
   ];
 
@@ -285,7 +275,17 @@ export async function POST(request: NextRequest) {
 
         send({ t: "done" });
         controller.close();
-        logExchange(sessionId, last.content, fullReply, sources);
+
+        // Structured log line: readable in the Vercel dashboard's function logs
+        console.log(
+          JSON.stringify({
+            fin_exchange: {
+              session: sessionId,
+              user: last.content.slice(0, 300),
+              fin: fullReply.slice(0, 300),
+            },
+          })
+        );
       } catch (err) {
         console.error("Chat error:", err instanceof Error ? err.message : err);
         send({

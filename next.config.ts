@@ -1,10 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Bundle the knowledge base .txt files with the serverless functions
-  // so /api/reingest can read them at runtime
+  // Bundle the knowledge base .txt files with the chat function:
+  // the whole KB ships inside Fin's prompt, no database involved
   outputFileTracingIncludes: {
-    "/api/reingest": ["./text files/**"],
+    "/api/chat": ["./text files/**"],
   },
   async headers() {
     return [
