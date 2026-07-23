@@ -1,0 +1,29 @@
+Matai Tech - Platforms and tools Luke works with
+
+These are platforms Luke has actually built in. This is a real list, not a padded logo wall.
+
+CRMs:
+- Salesforce
+- HubSpot
+- Pipedrive
+- GoHighLevel
+
+Field and trade tools:
+- JobNimbus (roofing CRM)
+- AccuLynx (roofing CRM)
+- Leap (home improvement)
+- Housecall Pro (home services)
+- Enerflo (solar sales)
+- SubcontractorHub
+
+Accounting and everything else:
+- Google Sheets
+- Monday.com
+- Zapier
+- n8n (workflow automation)
+- Supabase and custom databases
+- Custom web applications (React / Next.js)
+
+If a visitor's platform is not on this list: the honest answer is that if the tool has an API, or even just exports a spreadsheet, Luke can probably work with it. He would confirm on the call rather than promise blindly.
+
+Do not claim a specific number of "integrations delivered" or "50+ platforms." Frame this as "tools Luke works with."

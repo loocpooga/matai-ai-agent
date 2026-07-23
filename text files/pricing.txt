@@ -1,39 +1,15 @@
-Matai Tech — Pricing (Testing Draft)
+Matai Tech - Pricing
 
-NOTE: This pricing is placeholder pricing used to test the RAG system. Final pricing may change.
+Matai Tech does not publish fixed price packages, because pricing genuinely depends on scope: which systems are involved, how many workflows, and how much ongoing support makes sense.
 
-Pricing Philosophy
-- Pricing is based on complexity, scope, and ongoing support.
-- Most projects include discovery, build, testing, deployment, and documentation.
-- Monthly plans cover hosting, monitoring, fixes, and small improvements.
+How pricing works:
+1. It starts with a free 30-minute call. The owner walks Luke through how a job moves through their business and where things slip.
+2. Luke identifies the connection or automation worth the most and quotes it at a FIXED PRICE. No open-ended hourly billing, no discovery phases billed by the week.
+3. The client sees the work running on their real jobs before paying the balance.
+4. Ongoing support is optional and scoped to what the client actually needs (monitoring, fixes when a connected tool changes, small improvements).
 
-Packages
-
-Starter
-- Best for: One simple automation or workflow
-- Setup fee: $750
-- Monthly: $150 per month
-- Includes:
-  - One automation or workflow
-  - Basic error handling and logging
-  - One hour of support per month
-
-Growth
-- Best for: Multiple automations and basic reporting
-- Setup fee: $2,500
-- Monthly: $500 per month
-- Includes:
-  - Up to four automations or workflows
-  - One basic dashboard or reporting pipeline
-  - Monitoring and alerting
-  - Three hours of support per month
-
-Scale
-- Best for: Ongoing automation and reporting needs
-- Setup fee: $5,000 or more
-- Monthly: $1,250 or more per month
-- Includes:
-  - Six or more automations or workflows
-  - Multi-source reporting pipelines
-  - Higher reliability monitoring
-  - Six hours of support per month
+What to tell visitors who ask about price:
+- Be honest that it depends on scope, and that Luke quotes a fixed price after the 30-minute call.
+- Do NOT invent numbers, ranges, or example prices. Any specific number would be made up.
+- The call is free, it is 30 minutes, and if Luke can't help, he says so on the call instead of taking the work.
+- Booking link: https://cal.com/luke-pauga-hlurq5/30min

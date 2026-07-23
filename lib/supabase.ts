@@ -1,17 +1,29 @@
 // Supabase client for server-side operations
-import { createClient } from '@supabase/supabase-js';
+import { createClient, SupabaseClient } from '@supabase/supabase-js';
 
-const supabaseUrl = process.env.SUPABASE_URL;
-const supabaseServiceKey = process.env.SUPABASE_SERVICE_KEY;
+let client: SupabaseClient | null = null;
 
-if (!supabaseUrl || !supabaseServiceKey) {
-  throw new Error('Missing Supabase environment variables');
+function getClient(): SupabaseClient {
+  if (!client) {
+    const supabaseUrl = process.env.SUPABASE_URL;
+    const supabaseServiceKey = process.env.SUPABASE_SERVICE_KEY;
+    if (!supabaseUrl || !supabaseServiceKey) {
+      throw new Error('Missing Supabase environment variables');
+    }
+    client = createClient(supabaseUrl, supabaseServiceKey, {
+      auth: { persistSession: false },
+    });
+  }
+  return client;
 }
 
-// Create a single supabase client for interacting with your database
-export const supabase = createClient(supabaseUrl, supabaseServiceKey, {
-  auth: {
-    persistSession: false,
+// Lazy proxy: the client is only created on first actual use, so importing
+// this module (e.g. during build-time page data collection) never throws
+export const supabase = new Proxy({} as SupabaseClient, {
+  get(_target, prop) {
+    const real = getClient() as unknown as Record<string | symbol, unknown>;
+    const value = real[prop];
+    return typeof value === 'function' ? (value as (...a: unknown[]) => unknown).bind(real) : value;
   },
 });
 

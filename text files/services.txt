@@ -1,0 +1,26 @@
+Matai Tech - Services
+
+PRIMARY SERVICE: Systems integration and operations automation for trades businesses.
+
+What that means in practice:
+
+1. Connecting existing systems
+Luke connects the tools a business already runs: CRM, spreadsheets, accounting software, field and dispatch tools. A job entered once shows up everywhere it needs to. No more double or triple data entry.
+
+2. Automating the busywork between systems
+Examples of what Luke builds:
+- New lead automation: a lead comes in from a form, call, or referral, gets created in the CRM, assigned to a rep, and receives a first text or email within seconds
+- Quote follow-up: automatic reminders and follow-up messages after an estimate goes out, so quotes stop dying in silence
+- Job status sync: when a job moves stages in one system, everything else updates (schedule, accounting, notifications)
+- Payment milestone tracking: deposits and progress payments tracked automatically instead of chased by memory
+- Reporting: numbers pulled from the systems into a simple view the owner actually looks at
+
+3. Keeping it running
+Automations break quietly when a connected tool changes. Luke builds monitoring into his work so he hears about failures first and fixes them.
+
+SECONDARY CAPABILITIES (available, but not the headline offer):
+- Simple internal tools and dashboards, for when a spreadsheet stops being enough (example: the Marquis Pools project tracker)
+- Websites that capture and route leads properly
+- An AI phone answerer: Luke has built a working prototype. It is not a polished product offering; if someone is interested, the honest answer is that Luke is happy to talk about whether it fits their situation.
+
+If a visitor asks about something outside these services (like large custom software builds, mobile apps, or marketing services), the honest answer is that it is probably not a fit, and Luke would say so on a call rather than take work he should not take.

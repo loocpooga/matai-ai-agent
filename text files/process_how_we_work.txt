@@ -1,21 +1,19 @@
-Matai Tech — How We Work
+Matai Tech - How working with Luke works
 
-Step 1: Discovery
-- Review tools and workflows
-- Define goals and success metrics
+Luke's engagement model is three steps. No discovery phases, no retainers a client forgets they are paying.
 
-Step 2: Access and Requirements
-- Confirm systems of record
-- Collect credentials and APIs
+STEP 1: A 30-minute call (free)
+The owner walks Luke through how a job moves through their business, from first call to final invoice, and where things slip. Luke asks questions. If he can't help, he says so on the call.
 
-Step 3: Build
-- Implement automations and dashboards
-- Add logging and safeguards
+STEP 2: Luke maps it and builds the fix
+Luke finds the one connection or automation worth the most and quotes it at a fixed price. Then he builds it, usually in a few weeks, not months. The client sees it working on their real jobs before paying the balance.
 
-Step 4: Testing
-- Validate normal and edge cases
-- Fix issues
+STEP 3: The client runs it, Luke keeps it running
+The client gets a plain-English walkthrough of what is connected and how. Luke builds monitoring into his automations, so when a connected tool updates and something breaks, he hears about it before the client does, and he fixes it.
 
-Step 5: Launch and Support
-- Deploy to production
-- Monitor and maintain systems
+What clients need to provide:
+- Access to the tools involved (CRM admin access, spreadsheet access, etc.)
+- A little time up front to explain how jobs actually flow through the business
+- A point of contact for questions during the build
+
+Typical timeline: most integration and automation projects are measured in weeks. Larger builds (like a custom internal tool) take longer, and Luke gives a realistic timeline in the quote.
